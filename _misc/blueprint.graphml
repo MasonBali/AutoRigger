@@ -20,7 +20,7 @@
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="1741.5166985438614" width="1672.8301633914093" x="-326.260107421875" y="372.2772467686385"/>
+              <y:Geometry height="1741.5166985438618" width="1672.8301633914093" x="-347.6036439505707" y="331.83686176689946"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#333333" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="30" fontStyle="plain" hasLineColor="false" height="40.7529296875" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="1672.8301633914093" x="0.0" y="0.0">AutoRigger</y:NodeLabel>
@@ -49,1088 +49,7 @@
             <y:ProxyAutoBoundsNode>
               <y:Realizers active="0">
                 <y:GroupNode>
-                  <y:Geometry height="326.21802344256486" width="451.36596520778437" x="871.599365538898" y="432.9169860337317"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#333333" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="30" fontStyle="plain" hasLineColor="false" height="40.7529296875" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="451.36596520778437" x="0.0" y="0.0">UI</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-                  <y:BorderInsets bottom="25" bottomF="25.067504738148273" left="16" leftF="15.849441014992408" right="29" rightF="28.74218852625995" top="22" topF="21.630804565944118"/>
-                </y:GroupNode>
-                <y:GroupNode>
-                  <y:Geometry height="34.0" width="30.0" x="1125.9347941653155" y="766.3603515624999"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#333333" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="30" fontStyle="plain" hasLineColor="false" hasText="false" height="4.0" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="30.0" x="0.0" y="0.0"/>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="247" rightF="247.0293059138221" top="0" topF="5.6843418860808015E-14"/>
-                </y:GroupNode>
-              </y:Realizers>
-            </y:ProxyAutoBoundsNode>
-          </data>
-          <graph edgedefault="directed" id="n0::n0:">
-            <node id="n0::n0::n0">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="202.76534197730973" x="902.4488065538904" y="510.3007202871758"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="183.28955078125" x="9.737895598029809" y="5.311767578125">drag and drop components<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n0::n1">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="101.51879416531597" x="953.0720804598872" y="568.8896484375"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="84.04638671875" x="8.736203723282983" y="5.311767578125">edit settings<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n0::n2">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="101.51879416531597" x="953.0720804598874" y="627.4785765878241"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="94.05859375" x="3.7301002076579834" y="5.311767578125">create guides<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n0::n3">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="101.51879416531597" x="953.0720804598874" y="686.0675047381483"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="66.52685546875" x="17.495969348282983" y="5.311767578125">create rig<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n0::n4">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="101.51879416531597" x="1142.9912459481375" y="514.7117921368517"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="36.52685546875" x="32.49596934828287" y="5.311767578125">body<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n0::n5">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="101.51879416531597" x="1142.9912459481375" y="573.3007202871759"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="32.35205078125" x="34.58337169203287" y="5.311767578125">face<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n0::n6">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="101.51879416531597" x="1142.9912459481375" y="631.8896484375"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="85.71630859375" x="7.90124278578287" y="5.311767578125">components<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n0::n7">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="170.94499837925446" x="1108.278143841168" y="686.0675047381483"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="157.42041015625" x="6.762294111502115" y="5.311767578125">different levels of detail<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-          </graph>
-        </node>
-        <node id="n0::n1" yfiles.foldertype="group">
-          <data key="d4"/>
-          <data key="d6">
-            <y:ProxyAutoBoundsNode>
-              <y:Realizers active="0">
-                <y:GroupNode>
-                  <y:Geometry height="194.501953125" width="312.0" x="114.3125" y="605.8583984375"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#FF9900" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rig templates</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-                <y:GroupNode>
-                  <y:Geometry height="50.0" width="50.0" x="-127.12006494124807" y="605.8583984375"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-              </y:Realizers>
-            </y:ProxyAutoBoundsNode>
-          </data>
-          <graph edgedefault="directed" id="n0::n1:">
-            <node id="n0::n1::n0">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="129.3125" y="649.3603515625"/>
-                  <y:Fill color="#FFCC00" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="40.70166015625" x="44.149169921875" y="5.311767578125">biped<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n1::n1">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="282.3125" y="649.3603515625"/>
-                  <y:Fill color="#FFCC00" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="75.7333984375" x="26.63330078125" y="5.311767578125">quadruped<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n1::n2">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="129.3125" y="700.8603515625"/>
-                  <y:Fill color="#FFCC00" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="29.01220703125" x="49.993896484375" y="5.311767578125">bird<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n1::n3">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="282.3125" y="752.3603515625"/>
-                  <y:Fill color="#FFCC00" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="34.02197265625" x="47.489013671875" y="5.311767578125">prop<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n1::n4">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="129.3125" y="752.3603515625"/>
-                  <y:Fill color="#FFCC00" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="86.5439453125" x="21.22802734375" y="5.311767578125">environment<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n1::n5">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="282.3125" y="700.8603515625"/>
-                  <y:Fill color="#FFCC00" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="27.34228515625" x="50.828857421875" y="5.311767578125">fish<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-          </graph>
-        </node>
-        <node id="n0::n2" yfiles.foldertype="group">
-          <data key="d4"/>
-          <data key="d6">
-            <y:ProxyAutoBoundsNode>
-              <y:Realizers active="0">
-                <y:GroupNode>
-                  <y:Geometry height="143.001953125" width="312.0" x="-311.260107421875" y="447.3876953125"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#FF00FF" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rigData</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-                <y:GroupNode>
-                  <y:Geometry height="50.0" width="50.0" x="99.5" y="903.5439453125"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-              </y:Realizers>
-            </y:ProxyAutoBoundsNode>
-          </data>
-          <graph edgedefault="directed" id="n0::n2:">
-            <node id="n0::n2::n0">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="-296.260107421875" y="490.8896484375"/>
-                  <y:Fill color="#FF99CC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="48.20166015625" x="40.399169921875" y="5.311767578125">guides<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n2::n1">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="-143.26010742187498" y="490.8896484375"/>
-                  <y:Fill color="#FF99CC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="54.859375" x="37.0703125" y="5.311767578125">weights<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n2::n2">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="-296.260107421875" y="542.3896484375"/>
-                  <y:Fill color="#FF99CC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="65.69921875" x="31.650390625" y="5.311767578125">attributes<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n2::n3">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="-143.26010742187498" y="542.3896484375"/>
-                  <y:Fill color="#FF99CC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="69.0390625" x="29.98046875" y="5.311767578125">animation<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-          </graph>
-        </node>
-        <node id="n0::n3" yfiles.foldertype="group">
-          <data key="d4"/>
-          <data key="d6">
-            <y:ProxyAutoBoundsNode>
-              <y:Realizers active="0">
-                <y:GroupNode>
-                  <y:Geometry height="172.6162109375" width="317.85430059764997" x="523.7450649412481" y="429.2734375"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#FFCC00" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="317.85430059764997" x="0.0" y="0.0">rigInterface</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="1" leftF="1.140042480626903" right="10" rightF="9.605022460621171" top="18" topF="18.1142578125"/>
-                </y:GroupNode>
-                <y:GroupNode>
-                  <y:Geometry height="50.0" width="50.0" x="99.5" y="903.5439453125"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-              </y:Realizers>
-            </y:ProxyAutoBoundsNode>
-          </data>
-          <graph edgedefault="directed" id="n0::n3:">
-            <node id="n0::n3::n0">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="539.885107421875" y="490.8896484375"/>
-                  <y:Fill color="#FFFF99" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="48.20166015625" x="40.399169921875" y="5.311767578125">design<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n3::n1">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="687.9943430782769" y="553.8896484375"/>
-                  <y:Fill color="#FFFF99" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="54.859375" x="37.0703125" y="5.311767578125">widgets<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n3::n2">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="687.9943430782769" y="490.8896484375"/>
-                  <y:Fill color="#FFFF99" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="34.849609375" x="47.0751953125" y="5.311767578125">logic<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n3::n3">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="58.41669238249608" x="610.4684150393789" y="553.8896484375"/>
-                  <y:Fill color="#FFFF99" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="60.69677734375" x="-1.1400424806270166" y="5.311767578125">graphics<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n3::n4">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="58.41669238249608" x="539.885107421875" y="553.8896484375"/>
-                  <y:Fill color="#FFFF99" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="44.02685546875" x="7.194918456873097" y="5.311767578125">layout<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-          </graph>
-        </node>
-        <node id="n0::n4" yfiles.foldertype="group">
-          <data key="d4"/>
-          <data key="d6">
-            <y:ProxyAutoBoundsNode>
-              <y:Realizers active="0">
-                <y:GroupNode>
-                  <y:Geometry height="143.001953125" width="312.0" x="114.3125" y="447.3876953125"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#808000" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rigBuild</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-                <y:GroupNode>
-                  <y:Geometry height="50.0" width="50.0" x="99.5" y="903.5439453125"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-              </y:Realizers>
-            </y:ProxyAutoBoundsNode>
-          </data>
-          <graph edgedefault="directed" id="n0::n4:">
-            <node id="n0::n4::n0">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="129.3125" y="490.8896484375"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="36.52685546875" x="46.236572265625" y="5.311767578125">body<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n4::n1">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="282.3125" y="490.8896484375"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="32.35205078125" x="48.323974609375" y="5.311767578125">face<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n4::n2">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="282.3125" y="542.3896484375"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="34.02197265625" x="47.489013671875" y="5.311767578125">prop<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n4::n3">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="129.3125" y="542.3896484375"/>
-                  <y:Fill color="#CCFFCC" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="86.5439453125" x="21.22802734375" y="5.311767578125">environment<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-          </graph>
-        </node>
-        <node id="n0::n5" yfiles.foldertype="group">
-          <data key="d4"/>
-          <data key="d6">
-            <y:ProxyAutoBoundsNode>
-              <y:Realizers active="0">
-                <y:GroupNode>
-                  <y:Geometry height="416.501953125" width="312.0" x="116.71249999999998" y="1682.2919921875"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#3366FF" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rigFundaments</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-                  <y:BorderInsets bottom="16" bottomF="16.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-                <y:GroupNode>
-                  <y:Geometry height="50.0" width="50.0" x="111.0" y="720.89697265625"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-              </y:Realizers>
-            </y:ProxyAutoBoundsNode>
-          </data>
-          <graph edgedefault="directed" id="n0::n5:">
-            <node id="n0::n5::n0">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1725.7939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="58.19921875" x="35.400390625" y="5.311767578125">attribute<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n1">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1725.7939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="37.369140625" x="45.8154296875" y="5.311767578125">node<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n2">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1777.2939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="44.83251953125" x="42.083740234375" y="5.311767578125">matrix<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n3">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1880.2939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="31.51708984375" x="48.741455078125" y="5.311767578125">joint<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n4">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1880.2939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="14.83251953125" x="57.083740234375" y="5.311767578125">ik<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n5">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1983.2939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="40.6796875" x="44.16015625" y="5.311767578125">curve<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n6">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1777.2939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="39.85205078125" x="44.573974609375" y="5.311767578125">asset<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n7">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1828.7939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="24.01708984375" x="52.491455078125" y="5.311767578125">api<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n8">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1828.7939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="64.02197265625" x="32.489013671875" y="5.311767578125">deformer<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n9">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1931.7939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="41.52197265625" x="43.739013671875" y="5.311767578125">name<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n10">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1931.7939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="35.669921875" x="46.6650390625" y="5.311767578125">error<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n11">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1983.2939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="64.0439453125" x="32.47802734375" y="5.311767578125">duplicate<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n5::n12">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="2034.7939453125"/>
-                  <y:Fill color="#99CCFF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="30.6748046875" x="49.16259765625" y="5.311767578125">skin<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-          </graph>
-        </node>
-        <node id="n0::n6" yfiles.foldertype="group">
-          <data key="d4"/>
-          <data key="d6">
-            <y:ProxyAutoBoundsNode>
-              <y:Realizers active="0">
-                <y:GroupNode>
-                  <y:Geometry height="416.501953125" width="312.0" x="116.71249999999998" y="1249.060546875"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#800080" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rigFunctions</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-                  <y:BorderInsets bottom="16" bottomF="16.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-                <y:GroupNode>
-                  <y:Geometry height="50.0" width="50.0" x="99.5" y="903.5439453125"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
-                  <y:Shape type="roundrectangle"/>
-                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                </y:GroupNode>
-              </y:Realizers>
-            </y:ProxyAutoBoundsNode>
-          </data>
-          <graph edgedefault="directed" id="n0::n6:">
-            <node id="n0::n6::n0">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1292.5625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="49.02197265625" x="39.989013671875" y="5.311767578125">control<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n1">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1292.5625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="70.708984375" x="29.1455078125" y="5.311767578125">jointChain<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n2">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1344.0625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="54.0244140625" x="37.48779296875" y="5.311767578125">ikChain<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n3">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1447.0625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="32.33740234375" x="48.331298828125" y="5.311767578125">rivet<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n4">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1344.0625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="54.859375" x="37.0703125" y="5.311767578125">fkChain<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n5">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1395.5625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="79.87158203125" x="24.564208984375" y="5.311767578125">curveChain<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n6">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1395.5625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="69.0390625" x="29.98046875" y="5.311767578125">flexiPlane<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n7">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1498.5625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="33.1943359375" x="47.90283203125" y="5.311767578125">data<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n8">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1447.0625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="62.35205078125" x="33.323974609375" y="5.311767578125">structure<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n9">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1498.5625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="86.5439453125" x="21.22802734375" y="5.311767578125">sceneCheck<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n10">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1550.0625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="40.70166015625" x="44.149169921875" y="5.311767578125">guide<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n11">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1550.0625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="51.51220703125" x="38.743896484375" y="5.311767578125">muscle<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n12">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1601.5625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="35.6845703125" x="46.65771484375" y="5.311767578125">cloth<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-            <node id="n0::n6::n13">
-              <data key="d6">
-                <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1601.5625"/>
-                  <y:Fill color="#CC99FF" transparent="false"/>
-                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="77.359375" x="25.8203125" y="5.311767578125">skinWeight<y:LabelModel>
-                      <y:SmartNodeLabelModel distance="4.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                </y:GenericNode>
-              </data>
-            </node>
-          </graph>
-        </node>
-        <node id="n0::n7" yfiles.foldertype="group">
-          <data key="d4"/>
-          <data key="d6">
-            <y:ProxyAutoBoundsNode>
-              <y:Realizers active="0">
-                <y:GroupNode>
-                  <y:Geometry height="416.501953125" width="312.0" x="116.71249999999998" y="815.8291015625"/>
+                  <y:Geometry height="416.501953125" width="312.0" x="95.36896347130426" y="775.3887165607609"/>
                   <y:Fill color="#F5F5F5" transparent="false"/>
                   <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#800000" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rigCmds</y:NodeLabel>
@@ -1152,11 +71,11 @@
               </y:Realizers>
             </y:ProxyAutoBoundsNode>
           </data>
-          <graph edgedefault="directed" id="n0::n7:">
-            <node id="n0::n7::n0">
+          <graph edgedefault="directed" id="n0::n0:">
+            <node id="n0::n0::n0">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="859.3310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="818.8906696857609"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="68.189453125" x="30.4052734375" y="5.311767578125">footCmds<y:LabelModel>
@@ -1169,10 +88,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n1">
+            <node id="n0::n0::n1">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="859.3310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="818.8906696857609"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="63.18701171875" x="32.906494140625" y="5.311767578125">legCmds<y:LabelModel>
@@ -1185,10 +104,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n2">
+            <node id="n0::n0::n2">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="910.8310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="870.3906696857609"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="69.00244140625" x="29.998779296875" y="5.311767578125">armCmds<y:LabelModel>
@@ -1201,10 +120,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n3">
+            <node id="n0::n0::n3">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1013.8310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="973.3906696857609"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="76.5390625" x="26.23046875" y="5.311767578125">headCmds<y:LabelModel>
@@ -1217,10 +136,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n4">
+            <node id="n0::n0::n4">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1065.3310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1024.890669685761"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="62.3447265625" x="33.32763671875" y="5.311767578125">tailCmds<y:LabelModel>
@@ -1233,10 +152,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n5">
+            <node id="n0::n0::n5">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="910.8310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="870.3906696857609"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="79.029296875" x="24.9853515625" y="5.311767578125">spineCmds<y:LabelModel>
@@ -1249,10 +168,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n6">
+            <node id="n0::n0::n6">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="962.3310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="921.8906696857609"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="63.18701171875" x="32.906494140625" y="5.311767578125">hipCmds<y:LabelModel>
@@ -1265,10 +184,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n7">
+            <node id="n0::n0::n7">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="962.3310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="921.8906696857609"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="79.02197265625" x="24.989013671875" y="5.311767578125">chestCmds<y:LabelModel>
@@ -1281,10 +200,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n8">
+            <node id="n0::n0::n8">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1013.8310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="973.3906696857609"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="80.69189453125" x="24.154052734375" y="5.311767578125">fingerCmds<y:LabelModel>
@@ -1297,10 +216,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n9">
+            <node id="n0::n0::n9">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1065.3310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1024.890669685761"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="74.01953125" x="27.490234375" y="5.311767578125">wingCmds<y:LabelModel>
@@ -1313,10 +232,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n10">
+            <node id="n0::n0::n10">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1116.8310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1076.390669685761"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="79.029296875" x="24.9853515625" y="5.311767578125">chainCmds<y:LabelModel>
@@ -1329,10 +248,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n11">
+            <node id="n0::n0::n11">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1116.8310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1076.390669685761"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="74.8544921875" x="27.07275390625" y="5.311767578125">neckCmds<y:LabelModel>
@@ -1345,10 +264,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n12">
+            <node id="n0::n0::n12">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="131.71249999999998" y="1168.3310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1127.890669685761"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="107.36669921875" x="10.816650390625" y="5.311767578125">mechanicCmds<y:LabelModel>
@@ -1361,10 +280,10 @@
                 </y:GenericNode>
               </data>
             </node>
-            <node id="n0::n7::n13">
+            <node id="n0::n0::n13">
               <data key="d6">
                 <y:GenericNode configuration="ShinyPlateNode2">
-                  <y:Geometry height="33.0" width="129.0" x="284.7125" y="1168.3310546875"/>
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1127.890669685761"/>
                   <y:Fill color="#FFCC99" transparent="false"/>
                   <y:BorderStyle hasColor="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="71.52197265625" x="28.739013671875" y="5.311767578125">faceCmds<y:LabelModel>
@@ -1379,9 +298,1239 @@
             </node>
           </graph>
         </node>
+        <node id="n0::n1" yfiles.foldertype="group">
+          <data key="d4"/>
+          <data key="d6">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Geometry height="416.501953125" width="312.0" x="95.36896347130426" y="1208.620161873261"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#800080" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rigFunctions</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="16" bottomF="16.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+                <y:GroupNode>
+                  <y:Geometry height="50.0" width="50.0" x="99.5" y="903.5439453125"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="n0::n1:">
+            <node id="n0::n1::n0">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1252.122114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="49.02197265625" x="39.989013671875" y="5.311767578125">control<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n1">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1252.122114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="70.708984375" x="29.1455078125" y="5.311767578125">jointChain<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n2">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1303.622114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="54.0244140625" x="37.48779296875" y="5.311767578125">ikChain<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n3">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1406.622114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="32.33740234375" x="48.331298828125" y="5.311767578125">rivet<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n4">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1303.622114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="54.859375" x="37.0703125" y="5.311767578125">fkChain<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n5">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1355.122114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="79.87158203125" x="24.564208984375" y="5.311767578125">curveChain<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n6">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1355.122114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="69.0390625" x="29.98046875" y="5.311767578125">flexiPlane<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n7">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1458.122114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="33.1943359375" x="47.90283203125" y="5.311767578125">data<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n8">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1406.622114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="62.35205078125" x="33.323974609375" y="5.311767578125">structure<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n9">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1458.122114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="86.5439453125" x="21.22802734375" y="5.311767578125">sceneCheck<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n10">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1509.622114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="40.70166015625" x="44.149169921875" y="5.311767578125">guide<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n11">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1509.622114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="51.51220703125" x="38.743896484375" y="5.311767578125">muscle<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n12">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1561.122114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="35.6845703125" x="46.65771484375" y="5.311767578125">cloth<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n1::n13">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1561.122114998261"/>
+                  <y:Fill color="#CC99FF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="77.359375" x="25.8203125" y="5.311767578125">skinWeight<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n0::n2" yfiles.foldertype="group">
+          <data key="d4"/>
+          <data key="d6">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Geometry height="416.501953125" width="312.0" x="95.36896347130426" y="1641.851607185761"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#3366FF" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rigFundaments</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="16" bottomF="16.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+                <y:GroupNode>
+                  <y:Geometry height="50.0" width="50.0" x="111.0" y="720.89697265625"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="n0::n2:">
+            <node id="n0::n2::n0">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1685.353560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="58.19921875" x="35.400390625" y="5.311767578125">attribute<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n1">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1685.353560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="37.369140625" x="45.8154296875" y="5.311767578125">node<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n2">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1736.853560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="46.53173828125" x="41.234130859375" y="5.311767578125">parent<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n3">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1839.853560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="31.51708984375" x="48.741455078125" y="5.311767578125">joint<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n4">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1839.853560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="14.83251953125" x="57.083740234375" y="5.311767578125">ik<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n5">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1942.853560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="40.6796875" x="44.16015625" y="5.311767578125">curve<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n6">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1736.853560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="39.85205078125" x="44.573974609375" y="5.311767578125">asset<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n7">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1788.353560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="24.01708984375" x="52.491455078125" y="5.311767578125">api<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n8">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1788.353560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="64.02197265625" x="32.489013671875" y="5.311767578125">deformer<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n9">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1891.353560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="41.52197265625" x="43.739013671875" y="5.311767578125">name<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n10">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1891.353560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="35.669921875" x="46.6650390625" y="5.311767578125">error<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n11">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1942.853560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="64.0439453125" x="32.47802734375" y="5.311767578125">duplicate<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n12">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="110.36896347130426" y="1994.353560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="30.6748046875" x="49.16259765625" y="5.311767578125">skin<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n2::n13">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="263.36896347130426" y="1994.353560310761"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="44.83251953125" x="42.083740234375" y="5.311767578125">matrix<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n0::n3" yfiles.foldertype="group">
+          <data key="d4"/>
+          <data key="d6">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Geometry height="143.001953125" width="312.0" x="92.96896347130428" y="406.94731031076094"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#808000" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rigBuild</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+                <y:GroupNode>
+                  <y:Geometry height="50.0" width="50.0" x="99.5" y="903.5439453125"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="n0::n3:">
+            <node id="n0::n3::n0">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="107.96896347130428" y="450.44926343576094"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="36.52685546875" x="46.236572265625" y="5.311767578125">body<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n3::n1">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="260.9689634713043" y="450.44926343576094"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="32.35205078125" x="48.323974609375" y="5.311767578125">face<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n3::n2">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="260.9689634713043" y="501.94926343576094"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="34.02197265625" x="47.489013671875" y="5.311767578125">prop<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n3::n3">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="107.96896347130428" y="501.94926343576094"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="86.5439453125" x="21.22802734375" y="5.311767578125">environment<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n0::n4" yfiles.foldertype="group">
+          <data key="d4"/>
+          <data key="d6">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Geometry height="172.6162109375" width="317.85430059764997" x="502.40152841255235" y="388.83305249826094"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#FFCC00" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="317.85430059764997" x="0.0" y="0.0">rigInterface</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="1" leftF="1.140042480626903" right="10" rightF="9.605022460621171" top="18" topF="18.1142578125"/>
+                </y:GroupNode>
+                <y:GroupNode>
+                  <y:Geometry height="50.0" width="50.0" x="99.5" y="903.5439453125"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="n0::n4:">
+            <node id="n0::n4::n0">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="518.5415708931793" y="450.44926343576094"/>
+                  <y:Fill color="#FFFF99" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="48.20166015625" x="40.399169921875" y="5.311767578125">design<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n4::n1">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="666.6508065495811" y="513.4492634357609"/>
+                  <y:Fill color="#FFFF99" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="54.859375" x="37.0703125" y="5.311767578125">widgets<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n4::n2">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="666.6508065495811" y="450.44926343576094"/>
+                  <y:Fill color="#FFFF99" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="34.849609375" x="47.0751953125" y="5.311767578125">logic<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n4::n3">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="58.41669238249608" x="589.1248785106832" y="513.4492634357609"/>
+                  <y:Fill color="#FFFF99" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="60.69677734375" x="-1.1400424806270166" y="5.311767578125">graphics<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n4::n4">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="58.41669238249608" x="518.5415708931793" y="513.4492634357609"/>
+                  <y:Fill color="#FFFF99" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="44.02685546875" x="7.194918456873097" y="5.311767578125">layout<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n0::n5" yfiles.foldertype="group">
+          <data key="d4"/>
+          <data key="d6">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Geometry height="143.001953125" width="312.0" x="-332.6036439505707" y="406.94731031076094"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#FF00FF" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rigData</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+                <y:GroupNode>
+                  <y:Geometry height="50.0" width="50.0" x="99.5" y="903.5439453125"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="n0::n5:">
+            <node id="n0::n5::n0">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="-317.6036439505707" y="450.44926343576094"/>
+                  <y:Fill color="#FF99CC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="48.20166015625" x="40.399169921875" y="5.311767578125">guides<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n5::n1">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="-164.6036439505707" y="450.44926343576094"/>
+                  <y:Fill color="#FF99CC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="54.859375" x="37.0703125" y="5.311767578125">weights<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n5::n2">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="-317.6036439505707" y="501.94926343576094"/>
+                  <y:Fill color="#FF99CC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="65.69921875" x="31.650390625" y="5.311767578125">attributes<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n5::n3">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="-164.6036439505707" y="501.94926343576094"/>
+                  <y:Fill color="#FF99CC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="69.0390625" x="29.98046875" y="5.311767578125">animation<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n0::n6" yfiles.foldertype="group">
+          <data key="d4"/>
+          <data key="d6">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Geometry height="194.501953125" width="312.0" x="92.96896347130428" y="565.4180134357609"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#FF9900" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="20" fontStyle="plain" hasLineColor="false" height="28.501953125" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="312.0" x="0.0" y="0.0">rig templates</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+                <y:GroupNode>
+                  <y:Geometry height="50.0" width="50.0" x="-127.12006494124807" y="605.8583984375"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="n0::n6:">
+            <node id="n0::n6::n0">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="107.96896347130428" y="608.9199665607609"/>
+                  <y:Fill color="#FFCC00" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="40.70166015625" x="44.149169921875" y="5.311767578125">biped<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n6::n1">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="260.9689634713043" y="608.9199665607609"/>
+                  <y:Fill color="#FFCC00" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="75.7333984375" x="26.63330078125" y="5.311767578125">quadruped<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n6::n2">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="107.96896347130428" y="660.4199665607609"/>
+                  <y:Fill color="#FFCC00" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="29.01220703125" x="49.993896484375" y="5.311767578125">bird<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n6::n3">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="260.9689634713043" y="711.9199665607609"/>
+                  <y:Fill color="#FFCC00" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="34.02197265625" x="47.489013671875" y="5.311767578125">prop<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n6::n4">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="107.96896347130428" y="711.9199665607609"/>
+                  <y:Fill color="#FFCC00" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="86.5439453125" x="21.22802734375" y="5.311767578125">environment<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n6::n5">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="129.0" x="260.9689634713043" y="660.4199665607609"/>
+                  <y:Fill color="#FFCC00" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="27.34228515625" x="50.828857421875" y="5.311767578125">fish<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n0::n7" yfiles.foldertype="group">
+          <data key="d4"/>
+          <data key="d6">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Geometry height="326.21802344256486" width="451.36596520778437" x="850.2558290102023" y="392.47660103199263"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#333333" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="30" fontStyle="plain" hasLineColor="false" height="40.7529296875" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="451.36596520778437" x="0.0" y="0.0">UI</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="25" bottomF="25.067504738148273" left="16" leftF="15.849441014992408" right="29" rightF="28.74218852625995" top="22" topF="21.630804565944118"/>
+                </y:GroupNode>
+                <y:GroupNode>
+                  <y:Geometry height="34.0" width="30.0" x="1125.9347941653155" y="766.3603515624999"/>
+                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#333333" borderDistance="0.0" fontFamily="SF Old Republic" fontSize="30" fontStyle="plain" hasLineColor="false" hasText="false" height="4.0" modelName="internal" modelPosition="t" textColor="#FFFFFF" visible="true" width="30.0" x="0.0" y="0.0"/>
+                  <y:Shape type="roundrectangle"/>
+                  <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="247" rightF="247.0293059138221" top="0" topF="5.6843418860808015E-14"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="n0::n7:">
+            <node id="n0::n7::n0">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="202.76534197730973" x="881.1052700251947" y="469.86033528543675"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="183.28955078125" x="9.737895598029922" y="5.311767578125057">drag and drop components<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n7::n1">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="101.51879416531597" x="931.7285439311914" y="528.4492634357609"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="84.04638671875" x="8.736203723282983" y="5.311767578125">edit settings<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n7::n2">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="101.51879416531597" x="931.7285439311917" y="587.0381915860851"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="94.05859375" x="3.7301002076579834" y="5.311767578125">create guides<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n7::n3">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="101.51879416531597" x="931.7285439311917" y="645.6271197364092"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="66.52685546875" x="17.495969348282983" y="5.311767578125">create rig<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n7::n4">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="101.51879416531597" x="1121.6477094194418" y="474.27140713511267"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="36.52685546875" x="32.49596934828287" y="5.311767578125">body<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n7::n5">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="101.51879416531597" x="1121.6477094194418" y="532.8603352854368"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="32.35205078125" x="34.58337169203287" y="5.311767578125">face<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n7::n6">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="101.51879416531597" x="1121.6477094194418" y="591.4492634357609"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="85.71630859375" x="7.90124278578287" y="5.311767578125">components<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+            <node id="n0::n7::n7">
+              <data key="d6">
+                <y:GenericNode configuration="ShinyPlateNode2">
+                  <y:Geometry height="33.0" width="170.94499837925446" x="1086.9346073124723" y="645.6271197364092"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
+                  <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="SF Old Republic" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="custom" textColor="#000000" visible="true" width="157.42041015625" x="6.762294111502342" y="5.311767578125">different levels of detail<y:LabelModel>
+                      <y:SmartNodeLabelModel distance="4.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                </y:GenericNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n0::n8">
+          <data key="d5"/>
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="30.0" x="936.7556146086959" y="775.3887165607609"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="13.0" y="13.0">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n0::n9">
+          <data key="d5"/>
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="30.0" x="967.4879410138496" y="835.3887165607608"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="13.0" y="13.0">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="hexagon"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n0::n10">
+          <data key="d5"/>
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="30.0" x="1010.4556788042696" y="871.8906696857608"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="13.0" y="13.0">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="octagon"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n0::n11">
+          <data key="d5"/>
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="30.0" x="1061.078952710267" y="873.3906696857609"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="13.0" y="13.0">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="octagon"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n0::n12">
+          <data key="d5"/>
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="30.0" x="1111.7022266162644" y="873.3906696857609"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="13.0" y="13.0">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="octagon"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n0::n13">
+          <data key="d5"/>
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="30.0" x="1164.6154472098617" y="873.3906696857609"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="13.0" y="13.0">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="octagon"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n0::n14">
+          <data key="d5"/>
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="30.0" x="990.2796003060873" y="775.3887165607609"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="13.0" y="13.0">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
       </graph>
     </node>
-    <edge id="n0::e0" source="n0::n5" target="n0::n6">
+    <edge id="n0::e0" source="n0::n2" target="n0::n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1391,7 +1540,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e1" source="n0::n6" target="n0::n7">
+    <edge id="n0::e1" source="n0::n1" target="n0::n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1401,7 +1550,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e2" source="n0::n7" target="n0::n1">
+    <edge id="n0::e2" source="n0::n0" target="n0::n6">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1411,7 +1560,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e3" source="n0::n1" target="n0::n4">
+    <edge id="n0::e3" source="n0::n6" target="n0::n3">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-2.363636363636342" sy="-92.11035156249977" tx="0.0" ty="0.0"/>
@@ -1421,11 +1570,11 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e4" source="n0::n6" target="n0::n3">
+    <edge id="n0::e4" source="n0::n1" target="n0::n4">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="680.3150861815616" y="1457.3115234375"/>
+            <y:Point x="658.9715496528659" y="1416.871138435761"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1433,11 +1582,11 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e5" source="n0::n7" target="n0::n3">
+    <edge id="n0::e5" source="n0::n0" target="n0::n4">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-39.951189706431705" ty="92.31358809595277">
-            <y:Point x="640.3638964751299" y="1024.080078125"/>
+            <y:Point x="619.0203599464342" y="983.6396931232609"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1445,11 +1594,11 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e6" source="n0::n5" target="n0::n3">
+    <edge id="n0::e6" source="n0::n2" target="n0::n4">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="35.14646654356818" ty="0.0">
-            <y:Point x="715.4615527251298" y="1890.54296875"/>
+            <y:Point x="694.118016196434" y="1850.102583748261"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1457,11 +1606,11 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e7" source="n0::n7" target="n0::n2">
+    <edge id="n0::e7" source="n0::n0" target="n0::n5">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="8.0" ty="0.0">
-            <y:Point x="-147.26010742187498" y="1024.080078125"/>
+            <y:Point x="-168.6036439505707" y="983.6396931232609"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1469,11 +1618,11 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e8" source="n0::n6" target="n0::n2">
+    <edge id="n0::e8" source="n0::n1" target="n0::n5">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-23.494420907603853" ty="59.86958950333519">
-            <y:Point x="-178.75452832947883" y="1457.3115234375"/>
+            <y:Point x="-200.09806485817455" y="1416.871138435761"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1481,11 +1630,11 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e9" source="n0::n5" target="n0::n2">
+    <edge id="n0::e9" source="n0::n2" target="n0::n5">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-58.88504590760397" ty="0.0">
-            <y:Point x="-214.14515332947894" y="1890.54296875"/>
+            <y:Point x="-235.48868985817467" y="1850.102583748261"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1493,8 +1642,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::n3::e0" source="n0::n3::n0" target="n0::n3::n3">
-      <data key="d9"/>
+    <edge id="n0::n4::e0" source="n0::n4::n0" target="n0::n4::n3">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1504,8 +1652,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::n3::e1" source="n0::n3::n0" target="n0::n3::n4">
-      <data key="d9"/>
+    <edge id="n0::n4::e1" source="n0::n4::n0" target="n0::n4::n4">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1515,8 +1662,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::n3::e2" source="n0::n3::n0" target="n0::n3::n2">
-      <data key="d9"/>
+    <edge id="n0::n4::e2" source="n0::n4::n0" target="n0::n4::n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1526,8 +1672,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::n3::e3" source="n0::n3::n0" target="n0::n3::n1">
-      <data key="d9"/>
+    <edge id="n0::n4::e3" source="n0::n4::n0" target="n0::n4::n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1537,8 +1682,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::n3::e4" source="n0::n3::n2" target="n0::n3::n1">
-      <data key="d9"/>
+    <edge id="n0::n4::e4" source="n0::n4::n2" target="n0::n4::n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1548,8 +1692,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::n3::e5" source="n0::n3::n1" target="n0::n3::n2">
-      <data key="d9"/>
+    <edge id="n0::n4::e5" source="n0::n4::n1" target="n0::n4::n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1559,8 +1702,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::n0::e0" source="n0::n0::n0" target="n0::n0::n1">
-      <data key="d9"/>
+    <edge id="n0::n7::e0" source="n0::n7::n0" target="n0::n7::n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1570,8 +1712,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::n0::e1" source="n0::n0::n1" target="n0::n0::n2">
-      <data key="d9"/>
+    <edge id="n0::n7::e1" source="n0::n7::n1" target="n0::n7::n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1581,8 +1722,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::n0::e2" source="n0::n0::n2" target="n0::n0::n3">
-      <data key="d9"/>
+    <edge id="n0::n7::e2" source="n0::n7::n2" target="n0::n7::n3">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
