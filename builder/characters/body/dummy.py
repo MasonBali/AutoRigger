@@ -7,7 +7,7 @@ Created on 01.09.2013
 
 
 from maya import cmds
-from cmds import legCmds, footCmds, armCmds, spineCmds, neckCmds, headCmds
+from commands import legCmds, footCmds, armCmds, spineCmds, neckCmds, headCmds
 
 
 class build(object):
