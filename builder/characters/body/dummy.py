@@ -4,12 +4,15 @@ Created on 01.09.2013
 @author: Emre Tekinalp
 '''
 
+
+
 from maya import cmds
 from cmds import legCmds, footCmds, armCmds, spineCmds, neckCmds, headCmds
 
 
 class build(object):
     def __init__(self):
+        """DOCUMENTATION"""
         #vars
         
         #methods
