@@ -52,8 +52,6 @@ class build(object):
                                                position = [[0, 22, 0], [0, 24, 0], [0, 27, 1]])
         
         
-    print "FUCK YEAH PLEASE WORK MAN PLEASE WORK!!!!"
-        
     def __create(self):
         self.reload_modules()
         self.guides()
