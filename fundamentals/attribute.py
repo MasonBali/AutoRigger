@@ -8,14 +8,15 @@ from maya import cmds
 
 
 class Attribute():
-    """This class deals with everything concerning attributes of nodes, like lock, hide, set, get, add, connect, setDefault"""
-    def __init__(self):
-#        vars
+    """This class deals with everything concerning attributes of nodes like lock, hide, set, get, add, connect, setDefault"""
 
-#        methods
+    def __init__(self):
+        #vars
+
+        #methods
         pass        
-    
-    
+    #end def __init__()
+
     def lockAttribute(self, node = None, attrs = [None], lock = False, show = True):
         #check if node is valid
         if node != None:
@@ -69,10 +70,11 @@ class Attribute():
                                 cmds.setAttr(node + '.' + attr, lock = lock, keyable = show)  
         else:
             raise Exception('Given node: ' + node + ' is not valid or does not exist!' )
-        
+    #end def lock_attribute()
 
     def getAttribute(self):
         pass
+    #end def get_attribute()
 
 
 """                     
@@ -390,7 +392,4 @@ class Attribute():
                 
             else:
                 self.check.checkExisting(info = "Check out attributes.objectColor. You have to specify one of the given colors, dude!")                                                                                                                                                                                                                                                                                                                                                                       
-            
-            
-            
 """
