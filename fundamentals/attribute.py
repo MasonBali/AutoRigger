@@ -773,7 +773,6 @@ class Attribute(object):
             raise Exception('Specified node: ' + node + ' is not valid!')
     #end def setDefault()
 
-
 """
     def objectColor(self, obj = None, color = None):
         self.check.checkExisting(obj = obj)
