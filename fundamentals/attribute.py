@@ -7,18 +7,18 @@ Created on 01.09.2013
 from maya import cmds
 
 
-class Attribute():
-    """This class deals with everything concerning attributes of nodes like lock, hide, set, get, add, connect, setDefault"""
+class Attribute(object):
+    """
+    This class deals with everything concerning attributes of nodes like lock, 
+    hide, set, get, add, connect, setDefault
+    """
 
     def __init__(self):
-        #vars
-        self.translation = []
-
-        #methods
         pass        
     #end def __init__()
 
-    def lockAttribute(self, node = None, attribute = [None], lock = False, show = True):
+    def lockAttr(self, node = None, attribute = [None], lock = False, show = True):
+        ########################################################################
         #check if node is valid
         if node:
             #check if the specified node is a list, string or unicode
@@ -40,13 +40,16 @@ class Attribute():
                         elif attr == 'v':
                             cmds.setAttr(i + '.v', lock = lock, keyable = show)
                         elif not attr:
-                            raise Exception('No valid attributes specified: ' + attr)
+                            raise Exception('No valid attributes specified: ' 
+                                            + attr)
                         else:
                             for axis in 'XYZxyz':
                                 if cmds.objExists(i + "." + attr + axis):
-                                    cmds.setAttr(i + "." + attr + axis, lock = lock, keyable = show)
+                                    cmds.setAttr(i + "." + attr + axis, 
+                                                 lock = lock, keyable = show)
                                 else:
-                                    cmds.setAttr(i + "." + attr, lock = lock, keyable = show)                        
+                                    cmds.setAttr(i + "." + attr, lock = lock, 
+                                                 keyable = show)                        
             else:
                 for attr in attribute:
                     if attr == 't':
@@ -66,18 +69,23 @@ class Attribute():
                     else:
                         for axis in 'XYZxyz':
                             if cmds.objExists(node + '.' + attr + axis):
-                                cmds.setAttr(node + '.' + attr + axis, lock = lock, keyable = show)
+                                cmds.setAttr(node + '.' + attr + axis, 
+                                             lock = lock, keyable = show)
                             else:
-                                cmds.setAttr(node + '.' + attr, lock = lock, keyable = show)  
+                                cmds.setAttr(node + '.' + attr, 
+                                             lock = lock, keyable = show)  
         else:
             if isinstance(node, list):
                 for i in node:
-                    raise Exception('Given node: ' + i + ' is not valid or does not exist!')
+                    raise Exception('Given node: ' + i + ' is not valid or' 
+                                    'does not exist!')
             else:
-                raise Exception('Given node: ' + node + ' is not valid or does not exist!')
+                raise Exception('Given node: ' + node + ' is not valid or' 
+                                'does not exist!')
     #end def lockAttribute()
 
-    def getAttribute(self, node = None, attribute = [None]):       
+    def getAttr(self, node = None, attribute = [None]):       
+        ########################################################################
         value = []
         #check if specified node exists
         if node:
@@ -149,9 +157,11 @@ class Attribute():
                         #check if specified attribute is valid
                         elif not attr:
                             if cmds.objExists(i + '.v'):
-                                raise Exception('No valid attribute specified: ' + attr)
+                                raise Exception('No valid attribute specified: '
+                                                + attr)
                             else:
-                                raise Exception('Attribute: ' + str(attr) + ' does not exist on ' + i)
+                                raise Exception('Attribute: ' + str(attr) + 
+                                                ' does not exist on ' + i)
                         #get the value of a non standard transform attribute
                         else:
                             lock = 0
@@ -168,8 +178,12 @@ class Attribute():
                                             value.append(val)
                                     lock = 0
                                 else:
-                                    val = cmds.getAttr(i + "." + attr)
-                                    lock = 1
+                                    if (cmds.getAttr(i + "." + attr, type = 1) 
+                                        == 'message'):
+                                        pass
+                                    else:
+                                        val = cmds.getAttr(i + "." + attr)
+                                        lock = 1
                             if len(attribute) > 1:
                                 if result:
                                     value.append(result)
@@ -245,9 +259,11 @@ class Attribute():
                     #check if specified attribute is valid
                     elif not attr:
                         if cmds.objExists(node + '.v'):
-                            raise Exception('No valid attribute specified: ' + attr)
+                            raise Exception('No valid attribute specified: ' 
+                                            + attr)
                         else:
-                            raise Exception('Attribute: ' + str(attr) + ' does not exist on ' + node)
+                            raise Exception('Attribute: ' + str(attr) + 
+                                            ' does not exist on ' + node)
                     #get the value of a non standard transform attribute
                     else:
                         lock = 0
@@ -285,165 +301,480 @@ class Attribute():
         return value
     #end def getAttribute()
 
-
-"""                     
-    def attrConnect(self, nodeA = None, attrA = None, nodeB = None, attrB = None):
-        self.check.checkExisting(obj = nodeA)
-        self.check.checkExisting(obj = nodeB)
-        
-        print type(nodeA).__name__, type(nodeB).__name__
-        
-        if type(nodeA).__name__ == 'list':
-            if type(nodeB).__name__ == 'list':
-                for a, b in zip(nodeA, nodeB):
-                    cmds.connectAttr(a +"."+ attrA +"x", b +"."+ attrB +"x")
-                    cmds.connectAttr(a +"."+ attrA +"y", b +"."+ attrB +"y")
-                    cmds.connectAttr(a +"."+ attrA +"z", b +"."+ attrB +"z") 
-                
-            elif type(nodeB).__name__ == 'str':
-                for a in nodeA:
-                    cmds.connectAttr(a +"."+ attrA +"x", nodeB +"."+ attrB +"x")
-                    cmds.connectAttr(a +"."+ attrA +"y", nodeB +"."+ attrB +"y")
-                    cmds.connectAttr(a +"."+ attrA +"z", nodeB +"."+ attrB +"z")                                      
-                
-            elif type(nodeB).__name__ == 'unicode':
-                    cmds.connectAttr(nodeA +"."+ attrA +"x", nodeB +"."+ attrB +"x")
-                    cmds.connectAttr(nodeA +"."+ attrA +"y", nodeB +"."+ attrB +"y")
-                    cmds.connectAttr(nodeA +"."+ attrA +"z", nodeB +"."+ attrB +"z")                                    
-                
-        elif type(nodeA).__name__ == 'str':
-            if type(nodeB).__name__ == 'list':
-                for b in nodeB:
-                    cmds.connectAttr(nodeA +"."+ attrA +"x", b +"."+ attrB +"x")
-                    cmds.connectAttr(nodeA +"."+ attrA +"y", b +"."+ attrB +"y")
-                    cmds.connectAttr(nodeA +"."+ attrA +"z", b +"."+ attrB +"z") 
-                    
-            elif type(nodeB).__name__ == 'str':
-                cmds.connectAttr(nodeA +"."+ attrA +"x", nodeB +"."+ attrB +"x")
-                cmds.connectAttr(nodeA +"."+ attrA +"y", nodeB +"."+ attrB +"y")
-                cmds.connectAttr(nodeA +"."+ attrA +"z", nodeB +"."+ attrB +"z")   
-    
-            elif type(nodeB).__name__ == 'unicode':
-                    cmds.connectAttr(nodeA +"."+ attrA +"x", nodeB +"."+ attrB +"x")
-                    cmds.connectAttr(nodeA +"."+ attrA +"y", nodeB +"."+ attrB +"y")
-                    cmds.connectAttr(nodeA +"."+ attrA +"z", nodeB +"."+ attrB +"z")
-                                                        
-        elif type(nodeA).__name__ == 'unicode':
-            if type(nodeB).__name__ == 'list':
-                for b in nodeB:
-                    cmds.connectAttr(nodeA +"."+ attrA +"x", b +"."+ attrB +"x")
-                    cmds.connectAttr(nodeA +"."+ attrA +"y", b +"."+ attrB +"y")
-                    cmds.connectAttr(nodeA +"."+ attrA +"z", b +"."+ attrB +"z") 
-                    
-            elif type(nodeB).__name__ == 'str':
-                cmds.connectAttr(nodeA +"."+ attrA +"x", nodeB +"."+ attrB +"x")
-                cmds.connectAttr(nodeA +"."+ attrA +"y", nodeB +"."+ attrB +"y")
-                cmds.connectAttr(nodeA +"."+ attrA +"z", nodeB +"."+ attrB +"z")   
-    
-            elif type(nodeB).__name__ == 'unicode':
-                    cmds.connectAttr(nodeA +"."+ attrA +"x", nodeB +"."+ attrB +"x")
-                    cmds.connectAttr(nodeA +"."+ attrA +"y", nodeB +"."+ attrB +"y")
-                    cmds.connectAttr(nodeA +"."+ attrA +"z", nodeB +"."+ attrB +"z")   
-    
-    
-    
-    def attrSetAll(self, node = None, attrs = None, value = 0.0): 
-        if type(node).__name__ == 'list':
-            for n in node:
-                if type(attrs).__name__ == 'list':
-                    for attr in attrs:
-                        cmds.setAttr(n +"."+ attr +"x", value)
-                        cmds.setAttr(n +"."+ attr +"y", value)
-                        cmds.setAttr(n +"."+ attr +"z", value) 
-                else:
-                    cmds.setAttr(n +"."+ attrs +"x", value)
-                    cmds.setAttr(n +"."+ attrs +"y", value)
-                    cmds.setAttr(n +"."+ attrs +"z", value) 
-        
-        elif type(node).__name__ == 'unicode' or type(node).__name__ == "str":
-            if type(attrs).__name__ == 'list':
-                for attr in attrs:
-                    cmds.setAttr(node +"."+ attr +"x", value)
-                    cmds.setAttr(node +"."+ attr +"y", value)
-                    cmds.setAttr(node +"."+ attr +"z", value) 
+    def setAttr(self, node = None, attribute = [None], value = None, lock = False):
+        """
+        @todo: add string check
+        """
+        #check if node exists
+        if node:
+            #check if specified node is a list
+            if isinstance(node, list):
+                for i in range(len(node)):
+                    #check if attribute is not empty
+                    if attribute:
+                        #check if attribute stores lists
+                        for attr in range(len(attribute)):
+                            if not isinstance(attribute[attr], list):
+                                #check if attributes contain 'xyz' or 'XYZ'
+                                for axis in range(len('xyz')):
+                                    if cmds.objExists(node[i] + '.' + attribute[attr] + 'xyz'[axis]):
+                                        #check type of value
+                                        if isinstance(value, list):
+                                            #check if more lists 
+                                            #are stored in value
+                                            if not isinstance (value[0], list):
+                                                #set the attributes
+                                                cmds.setAttr(node[i] + '.' + attribute[attr] + 'xyz'[axis], value[axis])
+                                            else:
+                                                if not len(attribute) > 1:
+                                                    cmds.setAttr(node[i] + '.' + attribute[attr] + 'xyz'[axis], value[i][axis])                                                
+                                                else:
+                                                    #set the attributes
+                                                    cmds.setAttr(node[i] + '.' + attribute[attr] + 'xyz'[axis], value[attr][axis])
+                                        else:
+                                            #set the attributes
+                                            cmds.setAttr(node[i] + '.' + attribute[attr] + 'xyz'[axis], value)
+                                    else:
+                                        break
+                                for axis in range(len('XYZ')):
+                                    if cmds.objExists(node[i] + '.' + attribute[attr] + 'XYZ'[axis]):
+                                        #check type of value
+                                        if isinstance(value, list):
+                                            #check if more lists are stored in value
+                                            if not isinstance (value[0], list):
+                                                #set the attributes
+                                                cmds.setAttr(node[i] + '.' + attribute[attr] + 'XYZ'[axis], value[axis])
+                                            else:
+                                                if not len(attribute) > 1:
+                                                    cmds.setAttr(node[i] + '.' + attribute[attr] + 'XYZ'[axis], value[i][axis])                                                
+                                                else:
+                                                    #set the attributes 
+                                                    cmds.setAttr(node[i] + '.' + attribute[attr] + 'XYZ'[axis], value[attr][axis])
+                                        else:
+                                            #set the attributes
+                                            cmds.setAttr(node[i] + '.' + attribute[attr] + 'XYZ'[axis], value)
+                                    else:
+                                        break
+                                if cmds.objExists(node[i] + '.' + attribute[attr]):
+                                    #check type of value
+                                    if isinstance(value, list):
+                                        #check if more lists are stored in value
+                                        if not isinstance (value[0], list):
+                                            check = 0                                            
+                                            #set the attributes
+                                            for axis in range(len('xyz')):
+                                                if cmds.objExists(node[i] + '.' + attribute[attr] + 'xyz'[axis]):
+                                                    cmds.setAttr(node[i] + '.' + attribute[attr] + 'xyz'[axis], value[axis])
+                                                elif cmds.objExists(node[i] + '.' + attribute[attr] + 'XYZ'[axis]):
+                                                    cmds.setAttr(node[i] + '.' + attribute[attr] + 'XYZ'[axis], value[axis])
+                                                else:
+                                                    check = 1
+                                                    break
+                                            if check == 1:
+                                                cmds.setAttr(node[i] + '.' + attribute[attr], value[attr])
+                                        else:
+                                            check = 0
+                                            if not len(attribute) > 1:
+                                                cmds.setAttr(node[i] + '.' + attribute[attr], value[i][attr])                                                
+                                            else:
+                                                for axis in range(len('xyz')):
+                                                    if cmds.objExists(node[i] + '.' + attribute[attr] + 'xyz'[axis]):
+                                                        cmds.setAttr(node[i] + '.' + attribute[attr] + 'xyz'[axis], value[attr][axis])
+                                                    elif cmds.objExists(node[i] + '.' + attribute[attr] + 'XYZ'[axis]):
+                                                        cmds.setAttr(node[i] + '.' + attribute[attr] + 'XYZ'[axis], value[attr][axis])
+                                                    else:
+                                                        check = 1
+                                                        break
+                                                if check == 1:
+                                                    cmds.setAttr(node[i] + '.' + attribute[attr], value[attr])                                                
+                                    else:
+                                        check = 0                                            
+                                        #set the attributes
+                                        for axis in range(len('xyz')):
+                                            if cmds.objExists(node[i] + '.' + attribute[attr] + 'xyz'[axis]):
+                                                cmds.setAttr(node[i] + '.' + attribute[attr] + 'xyz'[axis], value)
+                                            elif cmds.objExists(node[i] + '.' + attribute[attr] + 'XYZ'[axis]):
+                                                cmds.setAttr(node[i] + '.' + attribute[attr] + 'XYZ'[axis], value)
+                                            else:
+                                                check = 1
+                                                break
+                                        if check == 1:
+                                            cmds.setAttr(node[i] + '.' + attribute[attr], value)
+                            else:
+                                #check if attributes contain 'xyz' or 'XYZ'
+                                for axis in range(len('xyz')):
+                                    if cmds.objExists(node[i] + '.' + attribute[i][attr] + 'xyz'[axis]):
+                                        #check type of value
+                                        if isinstance(value, list):
+                                            #check if more lists are stored in value
+                                            if not isinstance (value[0], list):
+                                                #set the attributes
+                                                cmds.setAttr(node[i] + '.' + attribute[i][attr] + 'xyz'[axis], value[axis])
+                                            else:
+                                                if not len(attribute) > 1:
+                                                    cmds.setAttr(node[i] + '.' + attribute[i][attr] + 'xyz'[axis], value[i][axis])                                                
+                                                else:
+                                                    #set the attributes
+                                                    cmds.setAttr(node[i] + '.' + attribute[i][attr] + 'xyz'[axis], value[attr][axis])                                                
+                                        else:
+                                            #set the attributes
+                                            cmds.setAttr(node[i] + '.' + attribute[i][attr] + 'xyz'[axis], value)                                            
+                                    else:
+                                        break
+                                for axis in range(len('XYZ')):
+                                    if cmds.objExists(node[i] + '.' + attribute[i][attr] + 'XYZ'[axis]):
+                                        #check type of value
+                                        if isinstance(value, list):
+                                            #check if more lists are stored in value
+                                            if not isinstance (value[0], list):
+                                                #set the attributes
+                                                cmds.setAttr(node[i] + '.' + attribute[i][attr] + 'XYZ'[axis], value[axis])
+                                            else:
+                                                if not len(attribute) > 1:
+                                                    cmds.setAttr(node[i] + '.' + attribute[i][attr] + 'XYZ'[axis], value[i][axis])                                                
+                                                else:
+                                                    #set the attributes 
+                                                    cmds.setAttr(node[i] + '.' + attribute[i][attr] + 'XYZ'[axis], value[attr][axis])                                    
+                                        else:
+                                            #set the attributes
+                                            cmds.setAttr(node[i] + '.' + attribute[i][attr] + 'xyz'[axis], value)
+                                    else:
+                                        break
+                        if isinstance(attribute[0], list):
+                            for attr in range(len(attribute[i])):
+                                if cmds.objExists(node[i] + '.' + attribute[i][attr]):
+                                    #check type of value
+                                    if isinstance(value, list):
+                                        #check if more lists are stored in value
+                                        if not isinstance (value[0], list):
+                                            #set the attributes
+                                            cmds.setAttr(node[i] + '.' + attribute[i][attr], value[i][attr])
+                                        else:
+                                            if not len(attribute) > 1:
+                                                cmds.setAttr(node[i] + '.' + attribute[i][attr], value[i][attr])                                                
+                                            else:
+                                                #set the attributes
+                                                for axis in range(len('xyz')):
+                                                    if cmds.objExists(node[i] + '.' + attribute[i][attr] + axis):
+                                                        cmds.setAttr(node[i] + '.' + attribute[i][attr] + axis, value[i][attr])                                    
+                                    else:
+                                        #set the attributes
+                                        cmds.setAttr(node[i] + '.' + attribute[i][attr], value)
+                    else:
+                        raise Excpetion('Specified attribute is not valid or does not exist!')
             else:
-                cmds.setAttr(node +"."+ attrs +"x", value)
-                cmds.setAttr(node +"."+ attrs +"y", value)
-                cmds.setAttr(node +"."+ attrs +"z", value) 
-
-        
-    
-    def addIdentity(self, obj = None, side = None, name = None, ident = None, typ = None, hook = None):
-        self.check.checkExisting(obj = obj)
-        
-        ident = str(side) + "_" + str(ident)
-        hook  = str(side) + "_" + str(name) + "_" + str(hook)
-        
-        cmds.addAttr(str(obj), longName = "side", shortName = "side", dataType = 'string', keyable = False)
-        cmds.addAttr(str(obj), longName = "name", shortName = "name", dataType = 'string', keyable = False)
-        cmds.addAttr(str(obj), longName = "id",   shortName = "id",   dataType = 'string', keyable = False)
-        cmds.addAttr(str(obj), longName = "type", shortName = "type", dataType = 'string', keyable = False)
-        cmds.addAttr(str(obj), longName = "hook", shortName = "hook", dataType = 'string', keyable = False)
-        
-        cmds.setAttr(str(obj) + ".side", side,  type = "string", lock = 1)
-        cmds.setAttr(str(obj) + ".name", name,  type = "string", lock = 1)
-        cmds.setAttr(str(obj) + ".id",   ident, type = "string", lock = 1)
-        cmds.setAttr(str(obj) + ".type", typ,   type = "string", lock = 1)        
-        cmds.setAttr(str(obj) + ".hook", hook,  type = "string", lock = 1)   
-        
-        
-        
-    def rotateOrder(self, obj = None, rotateOrder = None):
-        self.check.checkExisting(obj = obj)
-
-        if type(obj).__name__ == 'list':
-            for i in obj:
-                if rotateOrder == "xyz" or rotateOrder == None:
-                    cmds.setAttr(i + ".rotateOrder", 0)
-                elif rotateOrder == "yzx":
-                    cmds.setAttr(i + ".rotateOrder", 1)
-                elif rotateOrder == "zxy":
-                    cmds.setAttr(i + ".rotateOrder", 2)
-                elif rotateOrder == "xzy":
-                    cmds.setAttr(i + ".rotateOrder", 3)    
-                elif rotateOrder == "yxz":
-                    cmds.setAttr(i + ".rotateOrder", 4)
-                elif rotateOrder == "zyx":
-                    cmds.setAttr(i + ".rotateOrder", 5)
-                else:
-                    self.check.checkExisting(info = "You have to specify 'xyz', 'yzx', 'zxy', xzy'', 'yxz', 'zyx', dude!")                                    
-
+                #check if attribute is not empty
+                if attribute:
+                    #check if attribute stores lists
+                    for attr in range(len(attribute)):
+                        if not isinstance(attribute[attr], list):
+                            #check if attributes contain 'xyz' or 'XYZ'
+                            for axis in range(len('xyz')):
+                                if cmds.objExists(node + '.' + attribute[attr] + 'xyz'[axis]):
+                                    #check type of value
+                                    if isinstance(value, list):
+                                        #check if more lists 
+                                        #are stored in value
+                                        if not isinstance (value[0], list):
+                                            #set the attributes
+                                            cmds.setAttr(node + '.' + attribute[attr] + 'xyz'[axis], value[axis])
+                                        else:
+                                            if not len(attribute) > 1:
+                                                cmds.setAttr(node + '.' + attribute[attr] + 'xyz'[axis], value[0][axis])                                                
+                                            else:
+                                                #set the attributes
+                                                cmds.setAttr(node + '.' + attribute[attr] + 'xyz'[axis], value[attr][axis])
+                                    else:
+                                        #set the attributes
+                                        cmds.setAttr(node + '.' + attribute[attr] + 'xyz'[axis], value)
+                                else:
+                                    break
+                            for axis in range(len('XYZ')):
+                                if cmds.objExists(node + '.' + attribute[attr] + 'XYZ'[axis]):
+                                    #check type of value
+                                    if isinstance(value, list):
+                                        #check if more lists are stored in value
+                                        if not isinstance (value[0], list):
+                                            #set the attributes
+                                            cmds.setAttr(node + '.' + attribute[attr] + 'XYZ'[axis], value[axis])
+                                        else:
+                                            if not len(attribute) > 1:
+                                                cmds.setAttr(node + '.' + attribute[attr] + 'XYZ'[axis], value[0][axis])                                                
+                                            else:
+                                                #set the attributes 
+                                                cmds.setAttr(node + '.' + attribute[attr] + 'XYZ'[axis], value[attr][axis])
+                                    else:
+                                        #set the attributes
+                                        cmds.setAttr(node + '.' + attribute[attr] + 'XYZ'[axis], value)                                                
+                                else:
+                                    break
+                            if cmds.objExists(node + '.' + attribute[attr]):
+                                #check type of value
+                                if isinstance(value, list):
+                                    #check if more lists are stored in value
+                                    if not isinstance (value[0], list):
+                                        check = 0                                            
+                                        #set the attributes
+                                        for axis in range(len('xyz')):
+                                            if cmds.objExists(node + '.' + attribute[attr] + 'xyz'[axis]):
+                                                cmds.setAttr(node + '.' + attribute[attr] + 'xyz'[axis], value[axis])
+                                            elif cmds.objExists(node + '.' + attribute[attr] + 'XYZ'[axis]):
+                                                cmds.setAttr(node + '.' + attribute[attr] + 'XYZ'[axis], value[axis])
+                                            else:
+                                                check = 1
+                                                break
+                                        if check == 1:
+                                            cmds.setAttr(node + '.' + attribute[attr], value[attr])
+                                    else:
+                                        check = 0
+                                        if not len(attribute) > 1:
+                                            cmds.setAttr(node + '.' + attribute[attr], value[0][attr])                                                
+                                        else:
+                                            for axis in range(len('xyz')):
+                                                if cmds.objExists(node + '.' + attribute[attr] + 'xyz'[axis]):
+                                                    cmds.setAttr(node + '.' + attribute[attr] + 'xyz'[axis], value[attr][axis])
+                                                elif cmds.objExists(node + '.' + attribute[attr] + 'XYZ'[axis]):
+                                                    cmds.setAttr(node + '.' + attribute[attr] + 'XYZ'[axis], value[attr][axis])
+                                                else:
+                                                    check = 1                                                    
+                                                    break
+                                            if check == 1:
+                                                cmds.setAttr(node + '.' + attribute[attr], value[attr])
+                                else:
+                                    check = 0                                            
+                                    #set the attributes
+                                    for axis in range(len('xyz')):
+                                        if cmds.objExists(node + '.' + attribute[attr] + 'xyz'[axis]):
+                                            cmds.setAttr(node + '.' + attribute[attr] + 'xyz'[axis], value)
+                                        elif cmds.objExists(node + '.' + attribute[attr] + 'XYZ'[axis]):
+                                            cmds.setAttr(node + '.' + attribute[attr] + 'XYZ'[axis], value)
+                                        else:
+                                            check = 1
+                                            break
+                                    if check == 1:
+                                        cmds.setAttr(node + '.' + attribute[attr], value)
+                        else:
+                            #check if attributes contain 'xyz' or 'XYZ'
+                            for axis in range(len('xyz')):
+                                if cmds.objExists(node + '.' + attribute[0][attr] + 'xyz'[axis]):
+                                    #check type of value
+                                    if isinstance(value, list):
+                                        #check if more lists are stored in value
+                                        if not isinstance (value[0], list):
+                                            #set the attributes
+                                            cmds.setAttr(node + '.' + attribute[i][attr] + 'xyz'[axis], value[axis])
+                                        else:
+                                            if not len(attribute) > 1:
+                                                cmds.setAttr(node + '.' + attribute[i][attr] + 'xyz'[axis], value[0][axis])                                                
+                                            else:
+                                                #set the attributes
+                                                cmds.setAttr(node + '.' + attribute[i][attr] + 'xyz'[axis], value[attr][axis])                                                
+                                    else:
+                                        #set the attributes
+                                        cmds.setAttr(node + '.' + attribute[i][attr] + 'xyz'[axis], value)                                        
+                                else:
+                                    break
+                            for axis in range(len('XYZ')):
+                                if cmds.objExists(node + '.' + attribute[0][attr] + 'XYZ'[axis]):
+                                    #check type of value
+                                    if isinstance(value, list):
+                                        #check if more lists are stored in value
+                                        if not isinstance (value[0], list):
+                                            #set the attributes
+                                            cmds.setAttr(node + '.' + attribute[0][attr] + 'XYZ'[axis], value[axis])
+                                        else:
+                                            if not len(attribute) > 1:
+                                                cmds.setAttr(node + '.' + attribute[0][attr] + 'XYZ'[axis], value[0][axis])                                                
+                                            else:
+                                                #set the attributes 
+                                                cmds.setAttr(node + '.' + attribute[0][attr] + 'XYZ'[axis], value[attr][axis])
+                                    else:
+                                        #set the attributes
+                                        cmds.setAttr(node + '.' + attribute[0][attr] + 'XYZ'[axis], value)                                                
+                                else:
+                                    break
+                    if isinstance(attribute[0], list):
+                        for attr in range(len(attribute[0])):
+                            if cmds.objExists(node + '.' + attribute[0][attr]):
+                                #check type of value
+                                if isinstance(value, list):
+                                    #check if more lists are stored in value
+                                    if not isinstance (value[0], list):
+                                        #set the attributes
+                                        cmds.setAttr(node + '.' + attribute[0][attr], value[0][attr])
+                                    else:
+                                        if not len(attribute) > 1:
+                                            cmds.setAttr(node + '.' + attribute[0][attr], value[0][attr])                                                
+                                        else:
+                                            #set the attributes
+                                            for axis in range(len('xyz')):
+                                                if cmds.objExists(node + '.' + attribute[0][attr] + axis):
+                                                    cmds.setAttr(node + '.' + attribute[0][attr] + axis, value[0][attr])
+                                                elif cmds.objExists(node + '.' + attribute[0][attr] + axis.upper()):
+                                                    cmds.setAttr(node + '.' + attribute[0][attr] + axis.upper(), value[0][attr])                                                    
+                                else:
+                                    #set the attributes
+                                    cmds.setAttr(node + '.' + attribute[0][attr], value)
         else:
-            if rotateOrder == "xyz" or rotateOrder == None:
-                cmds.setAttr(obj + ".rotateOrder", 0)
-            elif rotateOrder == "yzx":
-                cmds.setAttr(obj + ".rotateOrder", 1)
-            elif rotateOrder == "zxy":
-                cmds.setAttr(obj + ".rotateOrder", 2)
-            elif rotateOrder == "xzy":
-                cmds.setAttr(obj + ".rotateOrder", 3)    
-            elif rotateOrder == "yxz":
-                cmds.setAttr(obj + ".rotateOrder", 4)
-            elif rotateOrder == "zyx":
-                cmds.setAttr(obj + ".rotateOrder", 5)
+            raise Exception('Specified node is not valid or does not exist!')
+    #end def setAttribute()
+
+    def connectAttr(self, node = [None, None], attribute = [None, None]):
+        """
+        @todo: add multiNodes in node, ie. node = [[list],[list]]
+        @todo: add multiAttributes in attribute, ie. attribute = [[list],[list]]
+        """
+        #check if node exist
+        if node:
+            #check if attribute exist
+            if attribute:
+                if isinstance(node, list):
+                    #check len of node
+                    if not isinstance(node[0], list):
+                        #check len of attribute
+                        if not isinstance(attribute[0], list):
+                            if not isinstance(attribute[1], list):
+                                check = 0
+                                for axis in range(len('xyz')):
+                                    if cmds.objExists(node[0] + '.' + attribute[0] + 'xyz'[axis]):
+                                        if cmds.objExists(node[1] + '.' + attribute[1] + 'xyz'[axis]):
+                                            try:
+                                                cmds.connectAttr(node[0] + '.' + attribute[0] + 'xyz'[axis], node[1] + '.' + attribute[1] + 'xyz'[axis])
+                                            except:
+                                                raise Exception(node[0] + '.' + attribute[0] + 'xyz'[axis] + ' is already connected to ' + node[1] + '.' + attribute[1] + 'xyz'[axis])
+                                        elif cmds.objExists(node[1] + '.' + attribute[1] + 'XYZ'[axis]):
+                                            try:
+                                                cmds.connectAttr(node[0] + '.' + attribute[0] + 'xyz'[axis], node[1] + '.' + attribute[1] + 'XYZ'[axis])
+                                            except:
+                                                raise Exception(node[0] + '.' + attribute[0] + 'xyz'[axis] + ' is already connected to ' + node[1] + '.' + attribute[1] + 'XYZ'[axis])
+                                        else:
+                                            try:
+                                                cmds.connectAttr(node[0] + '.' + attribute[0] + 'xyz'[axis], node[1] + '.' + attribute[1])
+                                            except:
+                                                raise Exception(node[0] + '.' + attribute[0] + 'xyz'[axis] + ' is already connected to ' + node[1] + '.' + attribute[1])
+                                    elif cmds.objExists(node[0] + '.' + attribute[0] + 'XYZ'[axis]):
+                                        if cmds.objExists(node[1] + '.' + attribute[1] + 'xyz'[axis]):
+                                            try:
+                                                cmds.connectAttr(node[0] + '.' + attribute[0] + 'XYZ'[axis], node[1] + '.' + attribute[1] + 'xyz'[axis])
+                                            except:
+                                                raise Exception(node[0] + '.' + attribute[0] + 'XYZ'[axis] + ' is already connected to ' + node[1] + '.' + attribute[1] + 'xyz'[axis])
+                                        elif cmds.objExists(node[1] + '.' + attribute[1] + 'XYZ'[axis]):
+                                            try:
+                                                cmds.connectAttr(node[0] + '.' + attribute[0] + 'XYZ'[axis], node[1] + '.' + attribute[1] + 'XYZ'[axis])
+                                            except:
+                                                raise Exception(node[0] + '.' + attribute[0] + 'XYZ'[axis] + ' is already connected to ' + node[1] + '.' + attribute[1] + 'XYZ'[axis])
+                                        else:
+                                            try:
+                                                cmds.connectAttr(node[0] + '.' + attribute[0] + 'XYZ'[axis], node[1] + '.' + attribute[1])
+                                            except:
+                                                check = 1
+                                    else:
+                                        check = 1
+                                if check == 1:
+                                    try:
+                                        cmds.connectAttr(node[0] + '.' + attribute[0], node[1] + '.' + attribute[1])
+                                    except:
+                                        raise Exception(node[0] + '.' + attribute[0] + ' is already connected to ' + node[1] + '.' + attribute[1])
+                        else:
+                            print '@todo: multiAttributes'
+                    else:
+                        print '@todo: multiNodes'
             else:
-                self.check.checkExisting(info = "You have to specify 'xyz', 'yzx', 'zxy', xzy'', 'yxz', 'zyx', dude!")                                    
-
-
-
-    def ihi(self, obj = None):
-        if type(obj).__name__ == "list":
-            for o in obj:
-                sel = cmds.listRelatives(o, allDescendents = 1)
-                for i in sel:
-                    cmds.setAttr(i + ".ihi", 0)
+                raise Exception('Specified attributes: ' + attribute + ' are not valid!')
         else:
-            sel = cmds.listRelatives(obj, allDescendents = 1)
-            for i in sel:
-                cmds.setAttr(i + ".ihi", 0)
+            raise Exception('Specified nodes: ' + node + ' are not valid!')
+    #end def connectAttr()
+
+    def addAttr(self, node = None, attrName = None, attrType = 'float', min = 0, max = 1, default = 1, enum = [None, None], keyable = True, channelBox = False):
+        ########################################################################
+        #check if node exists
+        if node:
+            #check if node is list
+            if isinstance(node, list):
+                for i in node:
+                    if not attrType == 'string':
+                        if not channelBox:
+                            if attrType == 'enum':
+                                enumList = []
+                                for e in range(len(enum)):
+                                    if e == (len(enum) - 1):
+                                        enumList.append(enum[e])   
+                                    else:
+                                        enumList.append(enum[e] + ':')
+                                enumList = ''.join(enumList)
+                                cmds.addAttr(i, longName = attrName, shortName = attrName, attributeType = 'enum', enumerator = enumList, min = min, max = max, defaultValue = default, keyable = keyable)
+                            elif attrType == 'vector':
+                                cmds.addAttr(i, longName = attrName, shortName = attrName, attributeType = 'double3', min = min, max = max, defaultValue = default, keyable = keyable)
+                                for axis in 'XYZ':
+                                    cmds.addAttr(i, longName = attrName + axis, shortName = attrName + axis, attributeType = 'double', parent = attrName, keyable = keyable)
+                            else:
+                                cmds.addAttr(i, longName = attrName, shortName = attrName, attributeType = attrType, min = min, max = max, defaultValue = default, keyable = keyable)
+                        else:
+                            cmds.addAttr(i, longName = attrName, shortName = attrName, attributeType = attrType, min = min, max = max, defaultValue = default, keyable = keyable)
+                            cmds.addAttr(i, edit = True, channelBox = True)
+                    else:
+                        if not channelBox:
+                            cmds.addAttr(i, longName = attrName, shortName = attrName, dataType = attrType, keyable = keyable)
+                        else:
+                            cmds.addAttr(i, longName = attrName, shortName = attrName, dataType = attrType, keyable = keyable)
+                            cmds.addAttr(i, edit = True, channelBox = True)
+            else:
+                if not attrType == 'string' or attrType == 'separator':
+                    if not channelBox:
+                        if attrType == 'enum':
+                            enumList = []
+                            for e in range(len(enum)):
+                                if e == (len(enum) - 1):
+                                    enumList.append(enum[e])   
+                                else:
+                                    enumList.append(enum[e] + ':')
+                            enumList = ''.join(enumList)
+                            cmds.addAttr(node, longName = attrName, shortName = attrName, attributeType = 'enum', enumerator = enumList, min = min, max = max, defaultValue = default, keyable = keyable)
+                        elif attrType == 'vector':
+                            cmds.addAttr(node, longName = attrName, shortName = attrName, attributeType = 'double3', min = min, max = max, defaultValue = default, keyable = keyable)
+                            for axis in 'XYZ':
+                                cmds.addAttr(node, longName = attrName + axis, shortName = attrName + axis, attributeType = 'double', parent = attrName, keyable = keyable)
+                        else:
+                            cmds.addAttr(node, longName = attrName, shortName = attrName, attributeType = attrType, min = min, max = max, defaultValue = default, keyable = keyable)
+                    else:
+                        cmds.addAttr(node, longName = attrName, shortName = attrName, attributeType = attrType, min = min, max = max, defaultValue = default, keyable = keyable)
+                        cmds.addAttr(node, edit = True, channelBox = True)
+                else:
+                    if not channelBox:
+                        cmds.addAttr(node, longName = attrName, shortName = attrName, dataType = attrType, keyable = keyable)
+                    else:
+                        cmds.addAttr(node, longName = attrName, shortName = attrName, dataType = attrType, keyable = keyable)
+                        cmds.addAttr(node, edit = True, channelBox = True)
+        else:
+            raise Exception('Specified node: ' + 'node' + ' is not valid!') 
+    #end def addAttr()
+
+    def setDefault(self, node = None):
+        ########################################################################
+        #check if node exists
+        if node:
+            #check if node is a list
+            if isinstance(node, list):
+                for i in node:
+                    #list attributes, get their default values and set them
+                    list_attrs = cmds.listAttr(i, keyable = True)
+                    for attr in list_attrs:
+                        attr_query = cmds.attributeQuery(attr, node = i,
+                                                        listDefault = True)[0]
+                        cmds.setAttr(i + '.' + attr, attr_query)
+            else:
+                #list attributes, get their default values and set them
+                list_attrs = cmds.listAttr(node, keyable = True)
+                for attr in list_attrs:
+                    attr_query = cmds.attributeQuery(attr, node = node,
+                                                    listDefault = True)[0]
+                    cmds.setAttr(node + '.' + attr, attr_query)
+        else:
+            raise Exception('Specified node: ' + node + ' is not valid!')
+    #end def setDefault()
 
 
-
+"""
     def objectColor(self, obj = None, color = None):
         self.check.checkExisting(obj = obj)
         
