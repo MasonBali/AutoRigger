@@ -91,14 +91,137 @@ class Attribute(object):
         if node:
             #check if node is a list or not
             if isinstance(node, list):
-                for i in node:
+                #check if attribute is a list
+                if isinstance(attribute, list):
+                    for i in node:
+                        #check for the main transform attributes
+                        for attr in attribute:
+                            if attr == 't':
+                                if cmds.objExists(i + '.t'):
+                                    tx = cmds.getAttr(i + '.tx')
+                                    ty = cmds.getAttr(i + '.ty')
+                                    tz = cmds.getAttr(i + '.tz')
+                                    if len(attribute) > 1:
+                                        t = [tx, ty, tz]
+                                        value.append(t)
+                                    else:
+                                        if len(node) > 1:
+                                            t = [tx, ty, tz]
+                                            value.append(t)
+                                        else:
+                                            value.append(tx)
+                                            value.append(ty)
+                                            value.append(tz)
+                            elif attr == 'r':
+                                if cmds.objExists(i + '.r'):
+                                    rx = cmds.getAttr(i + '.rx')
+                                    ry = cmds.getAttr(i + '.ry')
+                                    rz = cmds.getAttr(i + '.rz')
+                                    if len(attribute) > 1:                                
+                                        r  = [rx, ry, rz]
+                                        value.append(r)                                    
+                                    else:
+                                        if len(node) > 1:                                
+                                            r = [rx, ry, rz]
+                                            value.append(r)                                     
+                                        else:
+                                            value.append(rx)
+                                            value.append(ry)
+                                            value.append(rz)
+                            elif attr == 's':
+                                if cmds.objExists(i + '.s'):                            
+                                    sx = cmds.getAttr(i + '.sx')
+                                    sy = cmds.getAttr(i + '.sy')
+                                    sz = cmds.getAttr(i + '.sz')
+                                    if len(attribute) > 1:                                
+                                        s  = [sx, sy, sz]
+                                        value.append(s)                          
+                                    else:
+                                        if len(node) > 1:                                
+                                            s = [sx, sy, sz]
+                                            value.append(s)                                     
+                                        else:
+                                            value.append(sx)
+                                            value.append(sy)
+                                            value.append(sz)
+                            elif attr == 'v':
+                                if cmds.objExists(i + '.v'):                       
+                                    vis  = cmds.getAttr(i + '.v')
+                                    if len(attribute) > 1:
+                                        v = [vis]
+                                        value.append(v)
+                                    else:
+                                        if len(node) > 1:
+                                            v = [vis]
+                                            value.append(v)
+                                        else:
+                                            value.append(vis)
+                            #check if specified attribute is valid
+                            elif not attr:
+                                if cmds.objExists(i + '.v'):
+                                    raise Exception('No valid attribute specified: '
+                                                    + attr)
+                                else:
+                                    raise Exception('Attribute: ' + str(attr) + 
+                                                    ' does not exist on ' + i)
+                            #get the value of a non standard transform attribute
+                            else:
+                                lock = 0
+                                result = []                            
+                                for axis in 'XYZ' or axis in 'xyz':
+                                    if cmds.objExists(i + '.' + attr + axis):
+                                        val = cmds.getAttr(i + '.' + attr + axis)
+                                        if len(attribute) > 1: 
+                                            result.append(val)
+                                        else:                                       
+                                            if len(node) > 1:                            
+                                                result.append(val)
+                                            else:
+                                                value.append(val)
+                                        lock = 0
+                                    else:
+                                        if (cmds.getAttr(i + "." + attr, type = 1) 
+                                            == 'message'):
+                                            pass
+                                        else:
+                                            val = cmds.getAttr(i + "." + attr)
+                                            lock = 1
+                                if len(attribute) > 1:
+                                    if result:
+                                        value.append(result)
+                                else:
+                                    if len(node) > 1:
+                                        if result:
+                                            value.append(result)
+                                if lock == 1:
+                                    value.append(val)                          
+                else:
+                    if attribute == 't':
+                        for axis in 'xyz':
+                            result = cmds.getAttr(i + '.' + attribute + axis)
+                            value.append(result)
+                    elif attribute == 'r':
+                        for axis in 'xyz':
+                            result = cmds.getAttr(i + '.' + attribute + axis)
+                            value.append(result)
+                    elif attribute == 's':
+                        for axis in 'xyz':
+                            result = cmds.getAttr(i + '.' + attribute + axis)
+                            value.append(result)
+                    else:
+                        result = cmds.getAttr(i + '.' + attribute)
+                        if isinstance(result, list):
+                            value.append(result[0])
+                        value.append(result)
+            else:
+                if isinstance(attribute, list):
                     #check for the main transform attributes
                     for attr in attribute:
                         if attr == 't':
-                            if cmds.objExists(i + '.t'):
-                                tx = cmds.getAttr(i + '.tx')
-                                ty = cmds.getAttr(i + '.ty')
-                                tz = cmds.getAttr(i + '.tz')
+                            if cmds.objExists(node + '.t'):
+                                tx = cmds.getAttr(node + '.tx')
+                                ty = cmds.getAttr(node + '.ty')
+                                tz = cmds.getAttr(node + '.tz')
                                 if len(attribute) > 1:
                                     t = [tx, ty, tz]
                                     value.append(t)
@@ -111,10 +234,10 @@ class Attribute(object):
                                         value.append(ty)
                                         value.append(tz)
                         elif attr == 'r':
-                            if cmds.objExists(i + '.r'):
-                                rx = cmds.getAttr(i + '.rx')
-                                ry = cmds.getAttr(i + '.ry')
-                                rz = cmds.getAttr(i + '.rz')
+                            if cmds.objExists(node + '.r'):
+                                rx = cmds.getAttr(node + '.rx')
+                                ry = cmds.getAttr(node + '.ry')
+                                rz = cmds.getAttr(node + '.rz')
                                 if len(attribute) > 1:                                
                                     r  = [rx, ry, rz]
                                     value.append(r)                                    
@@ -127,10 +250,10 @@ class Attribute(object):
                                         value.append(ry)
                                         value.append(rz)
                         elif attr == 's':
-                            if cmds.objExists(i + '.s'):                            
-                                sx = cmds.getAttr(i + '.sx')
-                                sy = cmds.getAttr(i + '.sy')
-                                sz = cmds.getAttr(i + '.sz')
+                            if cmds.objExists(node + '.s'):                            
+                                sx = cmds.getAttr(node + '.sx')
+                                sy = cmds.getAttr(node + '.sy')
+                                sz = cmds.getAttr(node + '.sz')
                                 if len(attribute) > 1:                                
                                     s  = [sx, sy, sz]
                                     value.append(s)                          
@@ -143,8 +266,8 @@ class Attribute(object):
                                         value.append(sy)
                                         value.append(sz)
                         elif attr == 'v':
-                            if cmds.objExists(i + '.v'):                       
-                                vis  = cmds.getAttr(i + '.v')
+                            if cmds.objExists(node + '.v'):                       
+                                vis  = cmds.getAttr(node + '.v')
                                 if len(attribute) > 1:
                                     v = [vis]
                                     value.append(v)
@@ -156,19 +279,19 @@ class Attribute(object):
                                         value.append(vis)
                         #check if specified attribute is valid
                         elif not attr:
-                            if cmds.objExists(i + '.v'):
-                                raise Exception('No valid attribute specified: '
+                            if cmds.objExists(node + '.v'):
+                                raise Exception('No valid attribute specified: ' 
                                                 + attr)
                             else:
                                 raise Exception('Attribute: ' + str(attr) + 
-                                                ' does not exist on ' + i)
+                                                ' does not exist on ' + node)
                         #get the value of a non standard transform attribute
                         else:
                             lock = 0
                             result = []                            
                             for axis in 'XYZ' or axis in 'xyz':
-                                if cmds.objExists(i + '.' + attr + axis):
-                                    val = cmds.getAttr(i + '.' + attr + axis)
+                                if cmds.objExists(node + '.' + attr + axis):
+                                    val = cmds.getAttr(node + '.' + attr + axis)
                                     if len(attribute) > 1: 
                                         result.append(val)
                                     else:                                       
@@ -178,12 +301,8 @@ class Attribute(object):
                                             value.append(val)
                                     lock = 0
                                 else:
-                                    if (cmds.getAttr(i + "." + attr, type = 1) 
-                                        == 'message'):
-                                        pass
-                                    else:
-                                        val = cmds.getAttr(i + "." + attr)
-                                        lock = 1
+                                    val = cmds.getAttr(node + "." + attr)
+                                    lock = 1
                             if len(attribute) > 1:
                                 if result:
                                     value.append(result)
@@ -192,105 +311,25 @@ class Attribute(object):
                                     if result:
                                         value.append(result)
                             if lock == 1:
-                                value.append(val)                          
-            else:
-                #check for the main transform attributes
-                for attr in attribute:
-                    if attr == 't':
-                        if cmds.objExists(node + '.t'):
-                            tx = cmds.getAttr(node + '.tx')
-                            ty = cmds.getAttr(node + '.ty')
-                            tz = cmds.getAttr(node + '.tz')
-                            if len(attribute) > 1:
-                                t = [tx, ty, tz]
-                                value.append(t)
-                            else:
-                                if len(node) > 1:
-                                    t = [tx, ty, tz]
-                                    value.append(t)
-                                else:
-                                    value.append(tx)
-                                    value.append(ty)
-                                    value.append(tz)
-                    elif attr == 'r':
-                        if cmds.objExists(node + '.r'):
-                            rx = cmds.getAttr(node + '.rx')
-                            ry = cmds.getAttr(node + '.ry')
-                            rz = cmds.getAttr(node + '.rz')
-                            if len(attribute) > 1:                                
-                                r  = [rx, ry, rz]
-                                value.append(r)                                    
-                            else:
-                                if len(node) > 1:                                
-                                    r = [rx, ry, rz]
-                                    value.append(r)                                     
-                                else:
-                                    value.append(rx)
-                                    value.append(ry)
-                                    value.append(rz)
-                    elif attr == 's':
-                        if cmds.objExists(node + '.s'):                            
-                            sx = cmds.getAttr(node + '.sx')
-                            sy = cmds.getAttr(node + '.sy')
-                            sz = cmds.getAttr(node + '.sz')
-                            if len(attribute) > 1:                                
-                                s  = [sx, sy, sz]
-                                value.append(s)                          
-                            else:
-                                if len(node) > 1:                                
-                                    s = [sx, sy, sz]
-                                    value.append(s)                                     
-                                else:
-                                    value.append(sx)
-                                    value.append(sy)
-                                    value.append(sz)
-                    elif attr == 'v':
-                        if cmds.objExists(node + '.v'):                       
-                            vis  = cmds.getAttr(node + '.v')
-                            if len(attribute) > 1:
-                                v = [vis]
-                                value.append(v)
-                            else:
-                                if len(node) > 1:
-                                    v = [vis]
-                                    value.append(v)
-                                else:
-                                    value.append(vis)
-                    #check if specified attribute is valid
-                    elif not attr:
-                        if cmds.objExists(node + '.v'):
-                            raise Exception('No valid attribute specified: ' 
-                                            + attr)
-                        else:
-                            raise Exception('Attribute: ' + str(attr) + 
-                                            ' does not exist on ' + node)
-                    #get the value of a non standard transform attribute
+                                value.append(val)             
+                else:
+                    if attribute == 't':
+                        for axis in 'xyz':
+                            result = cmds.getAttr(node + '.' + attribute + axis)
+                            value.append(result)
+                    elif attribute == 'r':
+                        for axis in 'xyz':
+                            result = cmds.getAttr(node + '.' + attribute + axis)
+                            value.append(result)                            
+                    elif attribute == 's':
+                        for axis in 'xyz':
+                            result = cmds.getAttr(node + '.' + attribute + axis)
+                            value.append(result)
                     else:
-                        lock = 0
-                        result = []                            
-                        for axis in 'XYZ' or axis in 'xyz':
-                            if cmds.objExists(node + '.' + attr + axis):
-                                val = cmds.getAttr(node + '.' + attr + axis)
-                                if len(attribute) > 1: 
-                                    result.append(val)
-                                else:                                       
-                                    if len(node) > 1:                            
-                                        result.append(val)
-                                    else:
-                                        value.append(val)
-                                lock = 0
-                            else:
-                                val = cmds.getAttr(node + "." + attr)
-                                lock = 1
-                        if len(attribute) > 1:
-                            if result:
-                                value.append(result)
-                        else:
-                            if len(node) > 1:
-                                if result:
-                                    value.append(result)
-                        if lock == 1:
-                            value.append(val)             
+                        result = cmds.getAttr(node + '.' + attribute)
+                        if isinstance(result, list):
+                            value.append(result[0])
+                        value.append(result)
         else:
             if isinstance(node, list):
                 for i in node:
@@ -298,13 +337,42 @@ class Attribute(object):
             else:
                 raise Exception('Specified node: ' + node + ' is not valid!')
 
-        return value
+        make_it_a_string_god_damnit = ''.join(map(str, value))
+        return make_it_a_string_god_damnit
     #end def getAttribute()
 
     def setAttr(self, node = None, attribute = [None], value = None, lock = False):
         """
         @todo: add string check
         """
+
+#        #check which kind of value is specified
+#        if not isinstance(value, list):
+#            try:
+#                if int(value):
+#                    value = int(value)
+##                    print value, 'int'
+#            except:
+#                pass
+#            try:
+#                if float(value):
+#                    value = float(value)
+##                    print value, 'float'
+#            except:
+#                pass
+#            try:
+#                if bool(value):
+#                    value = bool(value)
+##                    print value, 'bool'
+#            except:
+#                pass
+#            try:
+#                if double(value):
+#                    value = double(value)
+##                    print value, 'double'
+#            except:
+#                print value
+#                pass
         #check if node exists
         if node:
             #check if specified node is a list
@@ -320,8 +388,7 @@ class Attribute(object):
                                     if cmds.objExists(node[i] + '.' + attribute[attr] + 'xyz'[axis]):
                                         #check type of value
                                         if isinstance(value, list):
-                                            #check if more lists 
-                                            #are stored in value
+                                            #check if more lists are stored in value
                                             if not isinstance (value[0], list):
                                                 #set the attributes
                                                 cmds.setAttr(node[i] + '.' + attribute[attr] + 'xyz'[axis], value[axis])
@@ -552,7 +619,7 @@ class Attribute(object):
                                             check = 1
                                             break
                                     if check == 1:
-                                        cmds.setAttr(node + '.' + attribute[attr], value)
+                                        cmds.setAttr(node + '.' + attribute[attr], bool(value))
                         else:
                             #check if attributes contain 'xyz' or 'XYZ'
                             for axis in range(len('xyz')):

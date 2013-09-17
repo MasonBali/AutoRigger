@@ -575,5 +575,3 @@ class Node(object):
             cmds.createNode('vectorProduct')
     #end def vectorProduct()
 
-nd = Node()
-nd.choice()
