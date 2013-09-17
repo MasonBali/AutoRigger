@@ -1,20 +1,29 @@
+"""
+Created on 17.09.2013
+@author: Paul Schweizer
+@email: paulschweizer@gmx.net
+@brief: A draggable PySide button.
+"""
+
 from PySide import QtGui, QtCore
+import dwidget
 
 
 class DraggableButton(QtGui.QToolButton):
     """Custom QToolButton that can be dragged and dropped.
     @param spawn_offspring: specifies whether the button shall be duplicated on drag.
     @type spawn_offspring: Boolean 
+    @todo: add right click menu
+    @todo: add icon
     """
     def __init__(self, spawn_offspring = True):
-        """"""
         super(DraggableButton, self).__init__()
         self.spawn_offspring = spawn_offspring
         self.mouse_offset = None
     # end def __init__()
 
     def mouseMoveEvent(self, e):
-        """##################################################################"""
+        """#################################################################"""
         if e.buttons() != QtCore.Qt.MiddleButton:
             return
         mimeData = QtCore.QMimeData()
@@ -29,10 +38,9 @@ class DraggableButton(QtGui.QToolButton):
             self.place_button(self)
     # end def mouseMoveEvent()
 
-    def mousePressEvent(self, e):
-        """##################################################################"""
-        QtGui.QToolButton.mousePressEvent(self, e)
-        parent = self.parent()
+    def mousePressEvent(self, event):
+        """#################################################################"""
+        QtGui.QToolButton.mousePressEvent(self, event)
     # end def mousePressEvent()
 
     def duplicate_button(self):
@@ -40,23 +48,30 @@ class DraggableButton(QtGui.QToolButton):
         cursor position.
         """
         target_widget = self.get_widget_at_mouse()
-        if target_widget.metaObject().className() != 'DragSupportWidget':
-            return
-        dbutton = DraggableButton(spawn_offspring = False)
-        self.place_button(dbutton)
-        target_widget.layout().addWidget(dbutton)
+        if type(target_widget) != dwidget.DragSupportWidget:
+            if type(target_widget.parent()) == dwidget.DragSupportWidget:
+                target_widget = target_widget.parent()
+            else:
+                return
+        btn = DraggableButton(spawn_offspring = False)
+        btn.setText(self.text())
+        self.place_button(btn)
+        target_widget.layout().addWidget(btn)
     # end def mouseReleaseEvent()
 
-    def place_button(self, dbutton):
+    def place_button(self, btn):
         """Places the given button at the current position of the cursor."""
         target_widget = self.get_widget_at_mouse()
-        if target_widget.metaObject().className() != 'DragSupportWidget':
-            return
+        if type(target_widget) != dwidget.DragSupportWidget:
+            if type(target_widget.parent()) == dwidget.DragSupportWidget:
+                target_widget = target_widget.parent()
+            else:
+                return
         pos = target_widget.cursor_position
         size = self.geometry()
-        dbutton.setGeometry(pos.x()-self.mouse_offset.x(), 
-                            pos.y()-self.mouse_offset.y(), size.width(), 
-                            size.height())
+        btn.setGeometry(pos.x()-self.mouse_offset.x(), 
+                        pos.y()-self.mouse_offset.y(), size.width(), 
+                        size.height())
     # end def place_button()
 
     def get_focus_widget(self):
@@ -70,4 +85,4 @@ class DraggableButton(QtGui.QToolButton):
         widget = QtGui.qApp.widgetAt(currentPos)
         return widget
     # end def get_widget_at_mouse()
-# end class DraggableButton()  
+# end class DraggableButton()

@@ -9,15 +9,20 @@ import os
 import sys
 from PySide import QtGui, QtCore
 from maya import cmds
-#sys.path.append('C:\PROJECTS\AutoRigger\ui')
-#form_class, base_class = convenience.load_ui_type('C:\PROJECTS\AutoRigger\ui\res\demo.ui')
 sys.path.append(os.path.dirname(__file__))
 from custompyside import *
-form_class, base_class = convenience.load_ui_type(os.path.join(os.path.dirname(__file__), 'res', 'autorigger.ui'))
+reload(dbutton)
+form_class, base_class = convenience.load_ui_type(
+                         os.path.join(os.path.dirname(__file__), 'res',
+                                      'autorigger.ui'))
 
 
 class AutoRiggerUI(base_class, form_class):
-    """This displays the auto rigger ui."""
+    """This displays the auto rigger ui.
+    @todo: format buttons
+    @todo: mirroring
+    @todo: background for mirroring
+    """
     def __init__(self, parent=None):
         super(AutoRiggerUI, self).__init__(parent)
         self.setupUi(self)
@@ -35,15 +40,26 @@ class AutoRiggerUI(base_class, form_class):
         dlay = dlayout.DragSupportLayout()
         self.dsw.setLayout(dlay)
         self.draglay.addWidget(self.dsw)
-        self.d_btn = dbutton.DraggableButton()
-        self.btnlay.insertWidget(0, self.d_btn)
+
+        for module in self.get_rigging_modules():
+            btn = dbutton.DraggableButton()
+            btn.setText(module)
+            self.btnlay.insertWidget(0, btn)
+        # end for module in self.get_rigging_modules()
+
     # end def setup_widgets()
 
-    
-    
-    
-    
-    
+    def get_rigging_modules(self):
+        """Retrieves a list of all available rigging modules."""
+        modules_path = os.listdir(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'commands'))
+        modules = list()
+        for module in modules_path:
+            if module == '__init__.py':
+                continue
+            modules.append(module[:-3])
+        # end for module in modules_path
+        return modules
+    # end def get_rigging_modules()    
     
 # end class AutoRiggerUI()
 
