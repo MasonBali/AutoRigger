@@ -574,4 +574,4 @@ class Node(object):
         else:
             cmds.createNode('vectorProduct')
     #end def vectorProduct()
-
+#end class Node()

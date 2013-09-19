@@ -72,4 +72,5 @@ def main():
         pass
     autorigger_win = AutoRiggerUI()
     autorigger_win.show()
+main()
 # end def main()

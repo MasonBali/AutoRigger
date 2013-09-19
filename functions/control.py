@@ -33,13 +33,22 @@ class Control(object):
         reload(node)
         reload(parent)
 
-    def _control_shapes(self):
+    def _control_shapes(self, side = None, name = None, size = 1, shape = 0, 
+                         color = None, position = [0.0,0.0,0.0], 
+                         rotation = [0.0,0.0,0.0], orientation = None, 
+                         flip = False, rotateOrder = None, parent = None):
         pass
 
-    def __create(self):
+    def __create(self, side = None, name = None, size = 1, shape = 0, 
+                  color = None, position = [0.0,0.0,0.0], rotation = [0.0,0.0,0.0], 
+                  orientation = None, flip = False, rotateOrder = None, 
+                  parent = None):
         ########################################################################
         self._reload_modules()
-        self._control_shapes()
+        self._control_shapes(side = side, name = name, size = size, shape = shape, 
+                      color = color, position = position, rotation = rotation, 
+                      orientation = orientation, flip = flip, 
+                      rotateOrder = rotateOrder, parent = parent)
     #end def __create()
 
 Control()

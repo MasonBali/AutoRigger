@@ -62,22 +62,22 @@ class Data(object):
         data = []
         if dataType == 'attribute':
             for i in sel:
-                listAttr = cmds.listAttr(i, keyable = True, visible = True)
-                for attrs in listAttr:
-                    value = cmds.getAttr(i + '.' + attrs)
+                list_attr = cmds.listAttr(i, keyable = True, visible = True)
+                for attrs in list_attr:
+                    value = attr.getAttr(node = i, attribute = attrs)
                     result = (str(i) + '.' + str(attrs) + ', ' + str(value))
                     data.append(result)
         elif dataType == 'shape':
             for i in sel:
-                shapeType = cmds.listRelatives(i, allDescendents = 1, shapes = 1)
-                objType = cmds.objectType(shapeType)
-                if objType == 'nurbsCurve' or objType == 'nurbsSurface':
+                shape_type = cmds.listRelatives(i, allDescendents = 1, shapes = 1)
+                obj_type = cmds.objectType(shapeType)
+                if obj_type == 'nurbsCurve' or obj_type == 'nurbsSurface':
                     curve = cmds.ls(i + '.cv[*]', flatten = 1)
                     for cv in curve:
                         pos = cmds.xform(cv, query = True, translation = True, 
                                          worldSpace = True)
                         data.append(pos)
-                elif objType == 'mesh':
+                elif obj_type == 'mesh':
                     vertices = cmds.ls(i + '.vtx[*]', flatten = 1)
                     for vtx in vertices:
                         pos = cmds.xform(vtx, query = True, translation = True, 
@@ -95,14 +95,13 @@ class Data(object):
         if dataType == 'attribute':
             for i in result:
                 if cmds.objExists(i.split(',')[0]):
-                    if not i.split(', ')[1].isdigit():
-                        if i.split(', ')[1] == str(True) or i.split(', ')[1] == str(False):
-                            cmds.setAttr(i.split(',')[0], bool(i.split(', ')[1]))
-                        else:
-                            cmds.setAttr(i.split(',')[0], float(i.split(',')[1]))
-                    else:
-                        cmds.setAttr(i.split(',')[0], i.split(',')[1])
+                   attr.setAttr(node = i.split(',')[0].split('.')[0], 
+                                attribute = i.split(',')[0].split('.')[1], 
+                                value = i.split(', ')[1])
         elif dataType == 'shape':
             return result
     #end def load()
 #end class Data()
+
+#Data().save(dirName = 'guideData', assetName = 'test', dataType = 'attribute')
+Data().load(dirName = 'guideData', assetName = 'test', dataType = 'attribute')
