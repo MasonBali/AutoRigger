@@ -12,8 +12,12 @@ from maya import cmds
 sys.path.append(os.path.dirname(__file__))
 from custompyside import *
 reload(dbutton)
+from custompyside import node
+reload(node)
+from custompyside import nodebackdrop
+reload(nodebackdrop)
 form_class, base_class = convenience.load_ui_type(
-                         os.path.join(os.path.dirname(__file__), 'res',
+                         os.path.join(os.path.dirname(__file__), 'resource',
                                       'autorigger.ui'))
 
 
@@ -36,16 +40,31 @@ class AutoRiggerUI(base_class, form_class):
 
     def setup_widgets(self):
         """#################################################################"""
-        self.dsw = dwidget.DragSupportWidget()
-        dlay = dlayout.DragSupportLayout()
-        self.dsw.setLayout(dlay)
-        self.draglay.addWidget(self.dsw)
-
+        # 0. Add buttons for the rigging modules
         for module in self.get_rigging_modules():
             btn = dbutton.DraggableButton()
             btn.setText(module)
             self.btnlay.insertWidget(0, btn)
         # end for module in self.get_rigging_modules()
+
+        #--- 1. A backdrop where the connections between the nodes get drawn
+        self.backdrop = nodebackdrop.NodeBackDrop()
+        self.backdrop.setLayout(dlayout.DragSupportLayout())
+        self.draglay.addWidget(self.backdrop)
+        
+        #--- 2. Create some test nodes
+        main_node = node.Node()
+        mid_node = node.Node()
+        end_node = node.Node()
+        nodes = [main_node, mid_node, end_node]
+        main_node.set_output(mid_node)
+        mid_node.set_input(main_node)
+        mid_node.set_output(end_node) 
+        end_node.set_input(mid_node)      
+        for i, n in enumerate(nodes):
+            self.backdrop.layout().addWidget(n)
+            n.layout().addWidget(QtGui.QPushButton('%s' % i))
+        # end for i, n in enumerate(nodes)
 
     # end def setup_widgets()
 
@@ -54,14 +73,13 @@ class AutoRiggerUI(base_class, form_class):
         modules_path = os.listdir(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'commands'))
         modules = list()
         for module in modules_path:
-            if module == '__init__.py':
+            if '__init__' in module or '.pyc' in module:
                 continue
             modules.append(module[:-3])
         # end for module in modules_path
         return modules
-    # end def get_rigging_modules()    
-    
-# end class AutoRiggerUI()
+    # end def get_rigging_modules
+# end class AutoRiggerUI
 
 
 def main():
@@ -72,5 +90,6 @@ def main():
         pass
     autorigger_win = AutoRiggerUI()
     autorigger_win.show()
+# end def main
+
 main()
-# end def main()

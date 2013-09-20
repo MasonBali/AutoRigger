@@ -6,7 +6,7 @@ Created on 17.09.2013
 """
 
 from PySide import QtGui, QtCore
-import dwidget
+import dwidget, nodebackdrop
 
 
 class DraggableButton(QtGui.QToolButton):
@@ -16,22 +16,22 @@ class DraggableButton(QtGui.QToolButton):
     @todo: add right click menu
     @todo: add icon
     """
-    def __init__(self, spawn_offspring = True):
+    def __init__(self, spawn_offspring=True):
         super(DraggableButton, self).__init__()
         self.spawn_offspring = spawn_offspring
         self.mouse_offset = None
     # end def __init__()
 
-    def mouseMoveEvent(self, e):
+    def mouseMoveEvent(self, event):
         """#################################################################"""
-        if e.buttons() != QtCore.Qt.MiddleButton:
+        if event.buttons() != QtCore.Qt.MiddleButton:
             return
         mimeData = QtCore.QMimeData()
         drag = QtGui.QDrag(self)
         drag.setMimeData(mimeData)
-        drag.setHotSpot(e.pos() - self.rect().topLeft())
+        drag.setHotSpot(event.pos() - self.rect().topLeft())
         dropAction = drag.start(QtCore.Qt.MoveAction)
-        self.mouse_offset = e.pos()
+        self.mouse_offset = event.pos()
         if self.spawn_offspring:
             self.duplicate_button()
         else:
@@ -48,12 +48,12 @@ class DraggableButton(QtGui.QToolButton):
         cursor position.
         """
         target_widget = self.get_widget_at_mouse()
-        if type(target_widget) != dwidget.DragSupportWidget:
-            if type(target_widget.parent()) == dwidget.DragSupportWidget:
+        if type(target_widget) != nodebackdrop.NodeBackDrop:
+            if type(target_widget.parent()) == nodebackdrop.NodeBackDrop:
                 target_widget = target_widget.parent()
             else:
                 return
-        btn = DraggableButton(spawn_offspring = False)
+        btn = DraggableButton(spawn_offspring=False)
         btn.setText(self.text())
         self.place_button(btn)
         target_widget.layout().addWidget(btn)
@@ -62,8 +62,8 @@ class DraggableButton(QtGui.QToolButton):
     def place_button(self, btn):
         """Places the given button at the current position of the cursor."""
         target_widget = self.get_widget_at_mouse()
-        if type(target_widget) != dwidget.DragSupportWidget:
-            if type(target_widget.parent()) == dwidget.DragSupportWidget:
+        if type(target_widget) != nodebackdrop.NodeBackDrop:
+            if type(target_widget.parent()) == nodebackdrop.NodeBackDrop:
                 target_widget = target_widget.parent()
             else:
                 return
@@ -75,12 +75,12 @@ class DraggableButton(QtGui.QToolButton):
     # end def place_button()
 
     def get_focus_widget(self):
-        """Get the currently focused widget"""
+        """Get the currently focused widget."""
         return QtGui.qApp.focusWidget()
     # end def get_focus_widget()
 
     def get_widget_at_mouse(self):
-        """Get the widget under the mouse"""
+        """Get the widget under the mouse."""
         currentPos = QtGui.QCursor().pos()
         widget = QtGui.qApp.widgetAt(currentPos)
         return widget

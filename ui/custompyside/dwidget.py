@@ -16,19 +16,19 @@ class DragSupportWidget(QtGui.QWidget):
         @param dragged_element: the currently dragged element
         @type dragged_element: QWidget
         """
-        self.dragged_element = dragged_element        
+        self.dragged_element = dragged_element
     # end def set_dragged_button()
 
-    def dropEvent(self, e):
+    def dropEvent(self, event):
         """Handles the drop event and places the currently active element at the 
         drop position.
         @param e: the drop event
         """
-        self.cursor_position = e.pos()
+        self.cursor_position = event.pos()
     # end def dropEvent()
 
-    def dragEnterEvent(self, e):
+    def dragEnterEvent(self, event):
         """Accepts the drag event."""
-        e.accept()
+        event.accept()
     # end def dragEnterEvent()
 # end class DragSupportWidget()
