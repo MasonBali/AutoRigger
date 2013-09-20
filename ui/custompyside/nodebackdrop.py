@@ -43,12 +43,12 @@ class NodeBackDrop(QtGui.QWidget):
     # end def dragEnterEvent
     
     def paintEvent(self, event):
-        self.painter.setClipping(True)
-        self.painter.setClipRect(0, 0, 1000, 1000)
+        size = self.size()
+        self.resize(0, 0)
         self.painter.begin(self)
-        self.painter.setBrush(QtGui.QBrush(QtCore.Qt.SolidPattern))
         self.draw_lines()
         self.painter.end()
+        self.resize(size)
     # end paintEvent
         
     def draw_lines(self):
