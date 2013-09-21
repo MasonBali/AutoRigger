@@ -57,25 +57,8 @@ class NodeBackDrop(QtGui.QWidget):
         lines = list()
         for c in children:
             if type(c) is not node.Node:
-                continue
-            inp = c.get_input()
-            outp = c.get_output()
-            start_x = c.geometry().x()+30
-            start_y = c.geometry().y()+30
-            start = QtCore.QPoint(start_x, start_y)
-            c.children()[1].setText('%s %s' % (start_x, start_y))
-            if inp is not None:
-                end_x = inp.geometry().x()+30
-                end_y = inp.geometry().y()+30
-                end = QtCore.QPoint(end_x, end_y)
-                ln = QtCore.QLine(start, end)
-                lines.append(ln)
-            if outp is not None:
-                end_x = outp.geometry().x()+30
-                end_y = outp.geometry().y()+30
-                end = QtCore.QPoint(end_x, end_y)
-                ln = QtCore.QLine(start, end)
-                lines.append(ln)
-        self.painter.drawLines(lines)       
+                continue 
+            lines += c.get_lines()
+        self.painter.drawLines(lines) 
     # end def draw_lines
 # end class NodeBackDrop

@@ -57,10 +57,12 @@ class AutoRiggerUI(base_class, form_class):
         mid_node = node.Node()
         end_node = node.Node()
         nodes = [main_node, mid_node, end_node]
-        main_node.set_output(mid_node)
-        mid_node.set_input(main_node)
-        mid_node.set_output(end_node) 
-        end_node.set_input(mid_node)      
+        main_node.add_output(mid_node)
+        main_node.add_output(end_node)
+        mid_node.add_input(main_node)
+        mid_node.add_output(end_node) 
+        end_node.add_input(mid_node)  
+        end_node.add_input(main_node)     
         for i, n in enumerate(nodes):
             self.backdrop.layout().addWidget(n)
             n.layout().addWidget(QtGui.QPushButton('%s' % i))

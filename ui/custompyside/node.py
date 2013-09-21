@@ -3,23 +3,23 @@ Created on 20.09.2013
 @author: Paul
 """
 from PySide import QtGui, QtCore
-from maya import cmds
-import dwidget, nodebackdrop
+import nodebackdrop
 
 
 class Node(QtGui.QWidget):
-    def __init__(self):
+    def __init__(self, shape='circle'):
         super(Node, self).__init__()
         self.setStyleSheet('QWidget{background-color:#f00;}')
         self.setLayout(QtGui.QGridLayout())
-        self.resize(70, 70)
-        self.input = None
-        self.output = None
+        self.resize(30, 30)
+        self.input = list()
+        self.output = list()
+        self.painter = QtGui.QPainter()
     # end def __init__
     
-    def set_input(self, widget):
+    def add_input(self, widget):
         """#################################################################"""
-        self.input = widget
+        self.input.append(widget)
     # end def set_input
 
     def get_input(self):
@@ -27,9 +27,9 @@ class Node(QtGui.QWidget):
         return self.input
     # end def get_input
 
-    def set_output(self, widget):
+    def add_output(self, widget):
         """#################################################################"""
-        self.output = widget
+        self.output.append(widget)
     # end def set_output
 
     def get_output(self):
@@ -37,6 +37,20 @@ class Node(QtGui.QWidget):
         return self.output
     # end def get_output
 
+    def get_lines(self): 
+        lines = list()  
+        start_x = self.geometry().x() + (self.geometry().width() / 2)
+        start_y = self.geometry().y() + (self.geometry().height() / 2)
+        start = QtCore.QPoint(start_x, start_y)
+        for node in self.get_input() + self.get_output():
+            end_x = node.geometry().x() + (node.geometry().width() / 2)
+            end_y = node.geometry().y() + (node.geometry().height() / 2)
+            end = QtCore.QPoint(end_x, end_y)
+            ln = QtCore.QLine(start, end)
+            lines.append(ln)
+        return lines
+    # end def get_lines
+    
     def mouseMoveEvent(self, event):
         """#################################################################"""
         if event.buttons() != QtCore.Qt.MiddleButton:
@@ -69,6 +83,22 @@ class Node(QtGui.QWidget):
                         pos.y()-self.mouse_offset.y(), size.width(), 
                         size.height())
     # end def place_button
+    
+    def paintEvent(self, event):
+        size = self.size()
+        self.resize(0, 0)
+        self.painter.begin(self)
+        self.draw_background()
+        self.painter.end()
+        self.resize(size)
+    # end paintEvent
+    
+    def draw_background(self):
+        # Loop through all nodes and draw the respective lines
+        color = QtGui.QColor(120, 180, 0)
+        self.painter.setBrush(QtGui.QColor(200, 0, 0))
+        self.painter.drawRect(0, 0, 90, 60)    
+    # end def draw_lines
     
     def get_focus_widget(self):
         """Get the currently focused widget"""
