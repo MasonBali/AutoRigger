@@ -9,12 +9,13 @@ import os
 import sys
 from PySide import QtGui, QtCore
 from maya import cmds
-sys.path.append(os.path.dirname(__file__))
+sys.path.append("C:/Users/Isaac Clark/Documents/GitHub/AutoRigger/ui/custompyside")
 from custompyside import *
 reload(dbutton)
 form_class, base_class = convenience.load_ui_type(
-                         os.path.join(os.path.dirname(__file__), 'res',
+                         os.path.join("C:/Users/Isaac Clark/Documents/GitHub/AutoRigger/ui", 'res',
                                       'autorigger.ui'))
+
 
 
 class AutoRiggerUI(base_class, form_class):
@@ -51,7 +52,7 @@ class AutoRiggerUI(base_class, form_class):
 
     def get_rigging_modules(self):
         """Retrieves a list of all available rigging modules."""
-        modules_path = os.listdir(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'commands'))
+        modules_path = os.listdir(os.path.join(os.path.dirname("C:/Users/Isaac Clark/Documents/GitHub/AutoRigger/ui"), 'commands'))
         modules = list()
         for module in modules_path:
             if module == '__init__.py':
@@ -72,5 +73,5 @@ def main():
         pass
     autorigger_win = AutoRiggerUI()
     autorigger_win.show()
-main()
 # end def main()
+main()
