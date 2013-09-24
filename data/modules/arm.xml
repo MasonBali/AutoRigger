@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <data>
-	<rigmodule name="arm">
-		<joint name="upperArm"></joint>
+	<rigmodule moduletype="arm">
+		<joint name="upperArm">
+		    <position x="10" y="20" z="30"></position>
+		    <rotation x="40" y="50" z="60"></rotation>
+		</joint>
 		<joint name="elbow"></joint>
 		<joint name="forearm"></joint>
 	</rigmodule>
