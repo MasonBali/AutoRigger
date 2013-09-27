@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+	<rigmodule name="arm">
+		<joint name="upperArm"></joint>
+		<joint name="elbow"></joint>
+		<joint name="forearm"></joint>
+	</rigmodule>
+</data>

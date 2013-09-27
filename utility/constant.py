@@ -25,5 +25,5 @@ class Constant():
         for constant in constants:
             setattr(Constant, constant.upper(), constant)
         # end for constant in constants
-    # end def namingconvention()
-# end class Constant()
+    # end def namingconvention
+# end class Constant

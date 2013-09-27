@@ -1,1 +1,2 @@
-__all__ = ['convenience', 'dbutton', 'dlayout', 'dwidget']
+__all__ = ['convenience', 'dbutton', 'dlayout', 'dwidget', 'node',
+           'nodebackdrop']
