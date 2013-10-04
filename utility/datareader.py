@@ -3,8 +3,10 @@ Created on 21.09.2013
 @author: Paul Schweizer
 """
 import os
+import sys
+import xml.etree.ElementTree as et
+sys.path.append('//Rocky/CINE/User/schweipa/scripts/AutoRigger')
 from utility import path
-from xml.dom import minidom
 reload(path)
 
 
@@ -14,53 +16,49 @@ class DataReader():
         pass
     # end def __init__
 
-    def parse_xml(self, datatype, module):
+    def parse_xml_etree(self, datatype, module):
         """"""
-        rigmodule = RigModule() 
-        xml_result = dict()
         xml_path = os.path.join(path.Path().get_root_path(), 'data', datatype,
                                  ('%s.xml' % module))
-        xmldoc = minidom.parse(xml_path)
-        root = xmldoc.firstChild
-        
-        # moduletype
-        module = self.get_attributes(xmldoc.getElementsByTagName('rigmodule')[0], rigmodule)
-        self.set_attribute(rigmodule, 'moduletype', module['moduletype'])
+        tree = et.parse(xml_path)
+        modules = tree.getroot()
+        module_data = list()
+        for module in modules:
+            module_data.append(self.build_data_object(module))
+        return module_data
+    # end def parse_xml_etree
 
-        #joints
-        for joint in xmldoc.getElementsByTagName('joint'):
-            self.set_attribute(rigmodule, 'joints', list())
-        
-        
-        
-        print dir(rigmodule)
-    # end def parse_xml
-    
-    def get_attributes(self, node, rigmodule):
-        """"""
-        attributes = dict()
-        if node.nodeType == 1 and node.hasAttributes():
-            for key in node.attributes.keys():
-                attributes[key] = node.attributes[key].value
-            # end for key in node.attributes.keys()
-        return attributes
-    # end def get_attributes
-    
-    def set_attribute(self, rigmodule, attribute, value):
-        """"""
-        setattr(rigmodule, attribute, value)
-    # end def set_attribute
+    def build_data_object(self, xml_tree):
+        data = DataClass()
+        for elem in xml_tree:
+            attr = elem.tag
+            if len(elem) > 0:
+                value = list()
+                for subelem in elem:
+                    value.append(self.build_data_object(subelem))
+            else:
+                value = elem.text
+            setattr(data, attr, value)
+        return data
+    # end def build_data_object
 # end class DataReader
 
 
-class RigModule():
+class DataClass():
+    """"""
     def __init__(self):
-        self.module = 'arm'
-        self.joints = [] # list of joints
-
-
-
+        pass
+    # end def __init__
+# end class DataClass
 
 
 dr = DataReader()
-dr.parse_xml('modules', 'arm')
+data_classes = dr.parse_xml_etree('modules', 'arm')
+for d in data_classes:
+    print dir(d)
+    for j in d.joints:
+        print dir(j)
+
+
+
+
