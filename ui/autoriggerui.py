@@ -16,6 +16,8 @@ from custompyside import node
 reload(node)
 from custompyside import nodebackdrop
 reload(nodebackdrop)
+from custompyside import nodegraphicsscene
+reload(nodegraphicsscene)
 form_class, base_class = convenience.load_ui_type(
                          os.path.join(os.path.dirname(__file__), 'resource',
                                       'autorigger.ui'))
@@ -34,6 +36,10 @@ class AutoRiggerUI(base_class, form_class):
     @todo: export all nodes to .xml file
     @todo: save setup
     @todo: load setup
+    @todo: Drag and Drop functionality for nodes
+    @todo: Draw Node connections
+    @todo: Zoom in and Out
+    @todo: Navigate the view via middle mouse button
 
     """
     def __init__(self, parent=None):
@@ -42,27 +48,27 @@ class AutoRiggerUI(base_class, form_class):
         self.setup_variables()
         self.setup_widgets()
         self.setGeometry(2640, 180, 600, 00)
-    # end def __init__()
+    # end def __init__
 
     def setup_variables(self):
         """#################################################################"""
-    # end def setup_variables()
+    # end def setup_variables
 
     def setup_widgets(self):
         """#################################################################"""
-        # 0. Add buttons for the rigging modules
+        # Add buttons for the rigging modules
         for module in self.get_rigging_modules():
             btn = dbutton.DraggableButton()
             btn.setText(module)
             self.btnlay.insertWidget(0, btn)
-        # end for module in self.get_rigging_modules()
+        # end for module in self.get_rigging_modules
 
-        # 1. A backdrop where the connections between the nodes get drawn
+        # A backdrop where the connections between the nodes get drawn
         self.backdrop = nodebackdrop.NodeBackDrop()
         self.backdrop.setLayout(dlayout.DragSupportLayout())
         self.draglay.addWidget(self.backdrop)
 
-        # 2. Create some test nodes
+        # Create some test nodes
         main_node = node.Node()
         mid_node = node.Node()
         end_node = node.Node()
@@ -73,11 +79,27 @@ class AutoRiggerUI(base_class, form_class):
         mid_node.add_output(end_node)
         end_node.add_input(mid_node)
         end_node.add_input(main_node)
-        for i, n in enumerate(nodes):
-            self.backdrop.layout().addWidget(n)
-        # end for i, n in enumerate(nodes)
 
-    # end def setup_widgets()
+        scene = self.setup_graphics_scene()
+        for i, n in enumerate(nodes):
+            scene.addWidget(n)
+        # end for i, n in enumerate(nodes)
+        self.graphics_view.setScene(scene)
+        self.graphics_view.show()
+    # end def setup_widgets
+
+    def setup_graphics_scene(self):
+        """Sets up the graphics scene for the graphics view."""
+        scene = nodegraphicsscene.NodeGraphicsScene()
+        return scene
+    # end def setup_graphics_scene
+
+    def test(self):
+        print 'fffff'
+
+
+
+
 
     def get_rigging_modules(self):
         """Retrieves a list of all available rigging modules."""

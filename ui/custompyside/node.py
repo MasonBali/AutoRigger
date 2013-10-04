@@ -14,12 +14,13 @@ class Node(QtGui.QWidget):
     """
     def __init__(self, shape='circle'):
         super(Node, self).__init__()
-        self.setStyleSheet('QWidget{background-color:#f00;}')
+        #self.setStyleSheet('QWidget{background-color:transparent;}')
         self.setLayout(QtGui.QGridLayout())
         self.resize(30, 30)
         self.input = list()
         self.output = list()
         self.painter = QtGui.QPainter()
+        self.setRenderHint(QtGui.QPainter.HighQualityAntialiasing)
     # end def __init__
 
     def add_input(self, widget):
@@ -93,9 +94,31 @@ class Node(QtGui.QWidget):
         size = self.size()
         self.resize(0, 0)
         self.painter.begin(self)
-        self.draw_background()
+        path = QtGui.QPainterPath()
+        path.addEllipse(0, 0, 28, 28)
+        self.painter.drawPath(path)
         self.painter.end()
         self.resize(size)
+
+
+
+        """
+        myGradient = QLinearGradient()
+        myPen = QPen()
+        boundingRectangle = QRectF()
+
+        myPath = QPainterPath()
+        myPath.addEllipse(boundingRectangle)
+
+        QPainter painter(self)
+        painter.setBrush(myGradient)
+        painter.setPen(myPen)
+        painter.drawPath(myPath)
+        """
+
+
+
+
     # end paintEvent
 
     def draw_background(self):

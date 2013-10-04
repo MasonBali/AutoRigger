@@ -117,6 +117,9 @@
                       <property name="topMargin">
                        <number>0</number>
                       </property>
+                      <item row="0" column="0">
+                       <widget class="QGraphicsView" name="graphics_view"/>
+                      </item>
                      </layout>
                     </item>
                    </layout>
