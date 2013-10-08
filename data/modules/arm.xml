@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <data>
-	<rigmodule name="arm">
-		<joint name="upperArm"></joint>
-		<joint name="elbow"></joint>
-		<joint name="forearm"></joint>
-	</rigmodule>
+	<module>
+		<type>arm</type>
+		<side>left</side>
+		<ik>True</ik>
+		<joints>
+			<joint name="upperArm">
+				<type>joint</type>
+			    <tx>2</tx>
+			    <ty>10</ty>
+			    <tz>0</tz>
+			</joint>
+			<joint name="lowerArm">
+				<type>joint</type>
+			    <tx>3.5</tx>
+			    <ty>8</ty>
+			    <tz>0</tz>
+			</joint>
+			<joint name="wrist">
+				<type>joint</type>
+			    <tx>4</tx>
+			    <ty>6</ty>
+			    <tz>0</tz>
+			</joint>
+		</joints>
+	</module>
 </data>

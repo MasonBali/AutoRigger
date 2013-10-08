@@ -27,13 +27,26 @@ class AutoRiggerUI(base_class, form_class):
     @todo: format buttons
     @todo: mirroring
     @todo: background for mirroring
+<<<<<<< HEAD:ui/AutoRiggerUI.py
     
+=======
+    @todo: automatic side placement of modules
+    @todo: connect buttons
+    @todo: draw on every user edit
+    @todo: read module infos from .xml file
+    @todo: icons and images
+    @todo: export all nodes to .xml file
+    @todo: save setup
+    @todo: load setup
+
+>>>>>>> 6c9b2b84f748e7545b91ff0804aeae0b00891300:ui/autoriggerui.py
     """
     def __init__(self, parent=None):
         super(AutoRiggerUI, self).__init__(parent)
         self.setupUi(self)
         self.setup_variables()
         self.setup_widgets()
+        self.setGeometry(2640, 180, 600, 00)
     # end def __init__()
 
     def setup_variables(self):
@@ -49,12 +62,12 @@ class AutoRiggerUI(base_class, form_class):
             self.btnlay.insertWidget(0, btn)
         # end for module in self.get_rigging_modules()
 
-        #--- 1. A backdrop where the connections between the nodes get drawn
+        # 1. A backdrop where the connections between the nodes get drawn
         self.backdrop = nodebackdrop.NodeBackDrop()
         self.backdrop.setLayout(dlayout.DragSupportLayout())
         self.draglay.addWidget(self.backdrop)
-        
-        #--- 2. Create some test nodes
+
+        # 2. Create some test nodes
         main_node = node.Node()
         mid_node = node.Node()
         end_node = node.Node()
@@ -62,12 +75,11 @@ class AutoRiggerUI(base_class, form_class):
         main_node.add_output(mid_node)
         main_node.add_output(end_node)
         mid_node.add_input(main_node)
-        mid_node.add_output(end_node) 
-        end_node.add_input(mid_node)  
-        end_node.add_input(main_node)     
+        mid_node.add_output(end_node)
+        end_node.add_input(mid_node)
+        end_node.add_input(main_node)
         for i, n in enumerate(nodes):
             self.backdrop.layout().addWidget(n)
-            n.layout().addWidget(QtGui.QPushButton('%s' % i))
         # end for i, n in enumerate(nodes)
 
     # end def setup_widgets()
