@@ -9,7 +9,7 @@ import os
 import sys
 from PySide import QtGui, QtCore
 from maya import cmds
-sys.path.append("C:/Users/Isaac Clark/Documents/GitHub/AutoRigger/ui/custompyside")
+sys.path.append('C:/Users/Isaac Clark/Documents/GitHub/AutoRigger/ui/custompyside')
 from custompyside import *
 reload(dbutton)
 from custompyside import node
@@ -17,7 +17,7 @@ reload(node)
 from custompyside import nodebackdrop
 reload(nodebackdrop)
 form_class, base_class = convenience.load_ui_type(
-                         os.path.join("C:/Users/Isaac Clark/Documents/GitHub/AutoRigger/ui", 'res',
+                         os.path.join('C:/Users/Isaac Clark/Documents/GitHub/AutoRigger/ui', 'resource',
                                       'autorigger.ui'))
 
 
@@ -27,6 +27,7 @@ class AutoRiggerUI(base_class, form_class):
     @todo: format buttons
     @todo: mirroring
     @todo: background for mirroring
+    
     """
     def __init__(self, parent=None):
         super(AutoRiggerUI, self).__init__(parent)
